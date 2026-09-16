@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+develop-eggs/
+eggs/
+parts/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# System & IDE artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Secrets & Environment variables
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+
+# Logs & Runtime states
+logs/
+*.log
+*.stdout.log
+*.stderr.log
+
+# Large Model Weights (Binary checkpoints & neural weights)
+# Note: Keep configs & model_info.json, exclude heavy model binaries from public git
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# Temporary test audio & scratch workspace
+scratch/
+tmp/
+temp/
+assets/audio/*_test_*.wav

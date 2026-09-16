@@ -1,0 +1,37 @@
+{
+  "character_id": "mika",
+  "character_name": "圣园未花 (Mika Misono)",
+  "character_source": "蔚蓝档案 (Blue Archive)",
+  "cv": "东山奈央 (Nao Toyama)",
+  "version": "v1.0",
+  "architecture": "GPT-SoVITS-v2",
+  "status": "active",
+  "created_at": "2026-08-20T10:00:00Z",
+  "weights": {
+    "gpt": "mika-e15.ckpt",
+    "sovits": "mika_e8_s176.pth"
+  },
+  "training_stats": {
+    "gpt_epochs": 15,
+    "sovits_epochs": 8,
+    "sovits_steps": 176
+  },
+  "recommended_params": {
+    "temperature": 1.0,
+    "top_k": 5,
+    "top_p": 1.0,
+    "speed_factor": 1.0
+  },
+  "reference_audios": [
+    {
+      "id": "mika_newyear",
+      "name": "2e7e7148e1",
+      "audio_file": "reference_audio/2e7e7148e1.wav",
+      "text": "あけましておめでとう、先生！こんな私だけど、今年もよろしくね。",
+      "lang": "ja",
+      "emotion": "温柔娇嗔问候",
+      "is_default": true
+    }
+  ],
+  "notes": "圣园未花原声底模，适用于日常问候与撒娇。"
+}

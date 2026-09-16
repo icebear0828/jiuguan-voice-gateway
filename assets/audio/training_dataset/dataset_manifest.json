@@ -1,0 +1,122 @@
+[
+  {
+    "filename": "anna_00_passion_love_power.wav",
+    "path": "assets/audio/training_dataset/anna_00_passion_love_power.wav",
+    "episode": "第 04 话",
+    "timestamp": "00:18:27 ~ 00:18:32",
+    "category": "狂热呼喊",
+    "duration": 5.0,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "愛の力ですわ！狸吉くんへの愛が溢れ出て止まらないのです！"
+  },
+  {
+    "filename": "anna_00_whisper_dounika.wav",
+    "path": "assets/audio/training_dataset/anna_00_whisper_dounika.wav",
+    "episode": "第 04 话",
+    "timestamp": "00:18:16 ~ 00:18:19",
+    "category": "狂爱耳语",
+    "duration": 2.6,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "どうにかなってしまいそうです…"
+  },
+  {
+    "filename": "anna_01_whisper_cookie_made.wav",
+    "path": "assets/audio/training_dataset/anna_01_whisper_cookie_made.wav",
+    "episode": "第 05 话",
+    "timestamp": "00:02:49.878 ~ 00:02:53.798",
+    "category": "狂爱耳语",
+    "duration": 3.92,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "今日は お二人のために クッキーを作ってきたんですのよ"
+  },
+  {
+    "filename": "anna_02_whisper_hand_moved.wav",
+    "path": "assets/audio/training_dataset/anna_02_whisper_hand_moved.wav",
+    "episode": "第 05 话",
+    "timestamp": "00:05:17.317 ~ 00:05:21.112",
+    "category": "狂爱耳语",
+    "duration": 3.79,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "ごめんなさい つい 手が動いてしまいましたの"
+  },
+  {
+    "filename": "anna_03_president_let_me_go.wav",
+    "path": "assets/audio/training_dataset/anna_03_president_let_me_go.wav",
+    "episode": "第 05 话",
+    "timestamp": "00:12:12.148 ~ 00:12:15.317",
+    "category": "会长威严",
+    "duration": 3.17,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "お母様 わたくしに行かせてください"
+  },
+  {
+    "filename": "anna_04_whisper_found_you.wav",
+    "path": "assets/audio/training_dataset/anna_04_whisper_found_you.wav",
+    "episode": "第 05 话",
+    "timestamp": "00:14:33.038 ~ 00:14:36.333",
+    "category": "狂爱耳语",
+    "duration": 3.29,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "ウフ 見つけましたわ"
+  },
+  {
+    "filename": "anna_05_president_resolve.wav",
+    "path": "assets/audio/training_dataset/anna_05_president_resolve.wav",
+    "episode": "第 05 话",
+    "timestamp": "00:16:45.587 ~ 00:16:47.965",
+    "category": "会长威严",
+    "duration": 2.38,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "さあ 覚悟なさい 雪原の青"
+  },
+  {
+    "filename": "anna_06_passion_catch_both.wav",
+    "path": "assets/audio/training_dataset/anna_06_passion_catch_both.wav",
+    "episode": "第 05 话",
+    "timestamp": "00:17:12.448 ~ 00:17:15.951",
+    "category": "狂热呼喊",
+    "duration": 3.5,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "両方まとめて 捕まえて差し上げますわ！"
+  },
+  {
+    "filename": "anna_07_whisper_what_is_this.wav",
+    "path": "assets/audio/training_dataset/anna_07_whisper_what_is_this.wav",
+    "episode": "第 05 话",
+    "timestamp": "00:17:19.288 ~ 00:17:21.457",
+    "category": "狂爱耳语",
+    "duration": 2.17,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "な… 何ですの これは"
+  },
+  {
+    "filename": "anna_08_passion_love_nectar.wav",
+    "path": "assets/audio/training_dataset/anna_08_passion_love_nectar.wav",
+    "episode": "第 05 话",
+    "timestamp": "00:17:56.075 ~ 00:18:00.913",
+    "category": "狂热呼喊",
+    "duration": 4.84,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "あ… ああ… どうして… どうして愛の蜜が？"
+  },
+  {
+    "filename": "anna_11_whisper_gaze.wav",
+    "path": "assets/audio/training_dataset/anna_11_whisper_gaze.wav",
+    "episode": "第 05 话",
+    "timestamp": "00:20:07.0 ~ +3.5s",
+    "category": "狂爱耳语",
+    "duration": 3.5,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "そんな瞳で私を見つめないでくださいまし…"
+  },
+  {
+    "filename": "anna_12_passion_wait_calling.wav",
+    "path": "assets/audio/training_dataset/anna_12_passion_wait_calling.wav",
+    "episode": "第 05 话",
+    "timestamp": "00:08:22.9 ~ +2.8s",
+    "category": "狂热呼喊",
+    "duration": 2.8,
+    "sample_rate": "48000Hz (Studio Hi-Fi)",
+    "transcript": "お待ちなさ〜い！"
+  }
+]

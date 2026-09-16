@@ -1,0 +1,75 @@
+{
+  "character_id": "utaha",
+  "character_name": "霞之丘诗羽 (Kasumigaoka Utaha / 霞之丘詩羽)",
+  "character_source": "路人女主的养成方法 (冴えない彼女の育てかた)",
+  "cv": "茅野爱衣 (Ai Kayano)",
+  "version": "v4",
+  "architecture": "GPT-SoVITS-v4",
+  "status": "evaluating",
+  "created_at": "2026-09-13T08:35:00Z",
+  "weights": {
+    "gpt": "霞之丘诗羽_01-e10.ckpt",
+    "sovits": "霞之丘诗羽_01_e16_s368_l32.pth"
+  },
+  "training_stats": {
+    "gpt_epochs": 10,
+    "sovits_epochs": 16,
+    "sovits_steps": 368,
+    "if_dpo": true,
+    "architecture_notes": "GPT-SoVITS v4 LoRA (layer 32) + DPO Alignment"
+  },
+  "recommended_params": {
+    "temperature": 0.8,
+    "top_k": 5,
+    "top_p": 0.95,
+    "speed_factor": 1.0
+  },
+  "reference_audios": [
+    {
+      "id": "neutral",
+      "name": "neutral_daily",
+      "audio_file": "reference_audios/ref_neutral.wav",
+      "text": "最終決戦前、とうとう主人公への気持ちを我慢できなくなったヒロインは、彼を自分の部屋へと誘って、",
+      "lang": "ja",
+      "emotion": "中立 / 沉着独白",
+      "is_default": true
+    },
+    {
+      "id": "intimate",
+      "name": "intimate_tender",
+      "audio_file": "reference_audios/ref_intimate.wav",
+      "text": "あなたの重みを感じて、あなたの手のひらの温もりを感じて",
+      "lang": "ja",
+      "emotion": "亲密 / 细腻低语",
+      "is_default": false
+    },
+    {
+      "id": "shy",
+      "name": "shy_flirt",
+      "audio_file": "reference_audios/ref_shy.wav",
+      "text": "別に激しくしてもいいの優しくされても",
+      "lang": "ja",
+      "emotion": "害羞 / 挑逗微嗔",
+      "is_default": false
+    },
+    {
+      "id": "annoyed",
+      "name": "annoyed_pout",
+      "audio_file": "reference_audios/ref_annoyed.wav",
+      "text": "どうして後片付けしようとしているのよええ確かにこのシーンは終わったわでもこのゲームには",
+      "lang": "ja",
+      "emotion": "不满 / 傲娇指责",
+      "is_default": false
+    },
+    {
+      "id": "sad",
+      "name": "sad_sorrow",
+      "audio_file": "reference_audios/ref_sad.wav",
+      "text": "ダメなの？こんなに近いのに、こんなに振り合ってるのに、こんなに強く…",
+      "lang": "ja",
+      "emotion": "悲伤 / 动情哀伤",
+      "is_default": false
+    }
+  ],
+  "notes": "学姐霞之丘诗羽GPT-SoVITS v4微调模型，包含中立、亲密、害羞、不满、悲伤5种典型情感切片。"
+}

@@ -1,0 +1,306 @@
+{
+  "schema_version": "2.0",
+  "default_character": "kurisu",
+  "characters": {
+    "kurisu": {
+      "character_name": "牧濑红莉栖 (Makise Kurisu / 助手)",
+      "character_source": "STEINS;GATE (命运石之门)",
+      "cv": "今井麻美 (Asami Imai)",
+      "engine": "gpt-sovits",
+      "active_version": "v2pro_master",
+      "architecture": "GPT-SoVITS-v2Pro",
+      "avatar_symbol": "🧬",
+      "supported_languages": ["ja", "zh"],
+      "primary_language": "ja",
+      "description": "v2Pro架构，2268句纯净母带微调，支持傲娇、知性科学、温柔深情与中文跨语种声线。",
+      "features": ["live_tts", "preset_demos"],
+      "demos": [
+        {
+          "id": "01_tsundere_coffee",
+          "title": "经典傲娇 · 咖啡别误会",
+          "category": "傲娇吐槽",
+          "lang": "ja",
+          "text": "べ、別にアンタのために淹れたコーヒーじゃないんだからね！勘違いしないでよ！",
+          "translation": "别、别误会了，这可不是专门为你泡的咖啡！可别想歪了啊！",
+          "audio_url": "/assets/audio/kurisu_samples/v2pro_master/01_tsundere_coffee.wav",
+          "duration": 5.04
+        },
+        {
+          "id": "02_tsundere_hentai",
+          "title": "愤怒反驳 · 谁是助手啊",
+          "category": "怒斥吐槽",
+          "lang": "ja",
+          "text": "誰が助手よ！私は牧瀬紅莉栖！クリスティーナでも助手でもないって言ってるでしょ、この変態！",
+          "translation": "谁是助手啊！我是牧濑红莉栖！都说了我既不是克里斯蒂娜也不是助手，你这个变态！",
+          "audio_url": "/assets/audio/kurisu_samples/v2pro_master/02_tsundere_hentai.wav",
+          "duration": 7.52
+        },
+        {
+          "id": "03_science_paradox",
+          "title": "学术论证 · 时间跳跃悖论",
+          "category": "知性科学",
+          "lang": "ja",
+          "text": "時間跳躍の可能性を否定する気はないけれど、タイムパラドックスの矛盾をどう説明するつもり？",
+          "translation": "虽然我不打算否定时间跳跃的可能性，但你打算如何解释时间悖论的矛盾？",
+          "audio_url": "/assets/audio/kurisu_samples/v2pro_master/03_science_paradox.wav",
+          "duration": 6.56
+        },
+        {
+          "id": "04_gentle_worldline",
+          "title": "温柔深情 · 无论哪条世界线",
+          "category": "深情羁绊",
+          "lang": "ja",
+          "text": "たとえどの世界線にいたとしても、私はきっと、あなたのことを見つけ出すから。",
+          "translation": "无论身处哪一条世界线，我都一定会找到你的。",
+          "audio_url": "/assets/audio/kurisu_samples/v2pro_master/04_gentle_worldline.wav",
+          "duration": 5.8
+        },
+        {
+          "id": "12_chinese_tsundere",
+          "title": "跨语种测试 · 中文傲娇声线",
+          "category": "跨语种",
+          "lang": "zh",
+          "text": "别、别误会了！我可不是为了你才特意做这个实验的，你这变态助手！",
+          "translation": "",
+          "audio_url": "/assets/audio/kurisu_samples/v2pro_master/demo_12_chinese_tsundere.wav",
+          "duration": 5.2
+        }
+      ]
+    },
+    "rimuru": {
+      "character_name": "利姆鲁·特恩佩斯特 (Rimuru Tempest)",
+      "character_source": "关于我转生变成史莱姆这档事",
+      "cv": "冈咲美保 (Miho Okasaki)",
+      "engine": "gpt-sovits",
+      "active_version": "v2pro_master",
+      "architecture": "GPT-SoVITS-v2Pro",
+      "avatar_symbol": "👑",
+      "supported_languages": ["ja"],
+      "primary_language": "ja",
+      "description": "v2Pro架构，1082句录音棚官方母带干声微调，支持俏皮活力、盟主威严、日常从容与吐槽摸鱼。",
+      "features": ["live_tts", "preset_demos"],
+      "demos": [
+        {
+          "id": "01_greeting_daily",
+          "title": "日常问候 · 从容和缓",
+          "category": "日常从容",
+          "lang": "ja",
+          "text": "やあ！調子はどうだ？今日もテンペストは平和で、いい日になりそうだね。",
+          "translation": "嗨！最近怎么样？今天魔国联邦也很和平，看起来会是个好日子呢。",
+          "audio_url": "/assets/audio/rimuru_samples/v2pro_master/01_greeting_daily.wav",
+          "duration": 5.54
+        },
+        {
+          "id": "02_classic_quote",
+          "title": "经典名台词 · 俏皮活力",
+          "category": "俏皮自夸",
+          "lang": "ja",
+          "text": "俺はスライムのリムル！悪いスライムじゃないよ！……って、前にも言ったっけ？わはは！",
+          "translation": "我是史莱姆利姆鲁！不是坏史莱姆哦！……哎，我之前是不是也说过？哇哈哈！",
+          "audio_url": "/assets/audio/rimuru_samples/v2pro_master/02_classic_quote.wav",
+          "duration": 7.62
+        },
+        {
+          "id": "03_covenant_leader",
+          "title": "盟主承诺 · 温柔坚定",
+          "category": "羁绊承诺",
+          "lang": "ja",
+          "text": "仲間たちと共に、誰もが笑って暮らせる国を必ず作ってみせるさ。",
+          "translation": "与同伴们一起，我一定会建立一个让所有人都能笑着生活下去的国家。",
+          "audio_url": "/assets/audio/rimuru_samples/v2pro_master/03_covenant_leader.wav",
+          "duration": 4.58
+        },
+        {
+          "id": "04_combat_wrath",
+          "title": "战斗威严 · 霸气护短",
+          "category": "盟主威严",
+          "lang": "ja",
+          "text": "俺の仲間に手を出したこと、後悔させてやる！そこから一歩も動くなよ！",
+          "translation": "竟敢对我的人出手，我会让你们后悔莫及！一步都别想从那里离开！",
+          "audio_url": "/assets/audio/rimuru_samples/v2pro_master/04_combat_wrath.wav",
+          "duration": 5.34
+        }
+      ]
+    },
+    "utaha": {
+      "character_name": "霞之丘诗羽 (Kasumigaoka Utaha / 霞之丘詩羽)",
+      "character_source": "路人女主的养成方法",
+      "cv": "茅野爱衣 (Ai Kayano)",
+      "engine": "gpt-sovits",
+      "active_version": "v4",
+      "architecture": "GPT-SoVITS-v4 (LoRA + DPO)",
+      "avatar_symbol": "🖤",
+      "supported_languages": ["ja"],
+      "primary_language": "ja",
+      "description": "GPT-SoVITS v4 LoRA架构 + DPO对齐，细腻拿捏中立作家独白、挑逗耳语、害羞微嗔与毒舌责难。",
+      "features": ["live_tts", "preset_demos"],
+      "demos": [
+        {
+          "id": "01_neutral_creator",
+          "title": "中立知性 · 创作者的觉悟",
+          "category": "中立独白",
+          "lang": "ja",
+          "text": "物語の結末を決めるのは、作者の特権であり、義務よ。倫理君、覚悟はできている？",
+          "translation": "决定故事结局是作者的特权，也是义务。伦理君，你做好心理准备了吗？",
+          "audio_url": "/assets/audio/utaha_samples/v4/01_neutral_creator.wav",
+          "duration": 7.52
+        },
+        {
+          "id": "02_intimate_whisper",
+          "title": "亲密耳语 · 伦理君的心跳",
+          "category": "亲密低语",
+          "lang": "ja",
+          "text": "ふふっ、そんなに私の顔をじっと見つめて……何か言いたいことでもあるの、倫理君？",
+          "translation": "呵呵，这么目不转睛地看着我的脸……是有什么想说的吗，伦理君？",
+          "audio_url": "/assets/audio/utaha_samples/v4/02_intimate_whisper.wav",
+          "duration": 9.47
+        },
+        {
+          "id": "03_shy_tsundere",
+          "title": "害羞傲娇 · 不是为你写的",
+          "category": "害羞微嗔",
+          "lang": "ja",
+          "text": "べ、別にあなたに読んでもらいたくて書いたんじゃないわよ。勘違いしないでちょうだい。",
+          "translation": "别、可不是为了想让你读才写的。可别自作多情了。",
+          "audio_url": "/assets/audio/utaha_samples/v4/03_shy_tsundere.wav",
+          "duration": 6.84
+        },
+        {
+          "id": "04_annoyed_deadlock",
+          "title": "不满嗔怒 · 截稿前的毒虫",
+          "category": "毒舌嗔怒",
+          "lang": "ja",
+          "text": "締め切り直前になってプロットを全部白紙に戻すなんて……本気で言っているのかしら、この毒虫。",
+          "translation": "临近截稿日居然把大纲全推翻重来……你这家伙是认真的吗，毒虫。",
+          "audio_url": "/assets/audio/utaha_samples/v4/04_annoyed_deadlock.wav",
+          "duration": 7.32
+        }
+      ]
+    },
+    "mika": {
+      "character_name": "圣园未花 (Mika Misono)",
+      "character_source": "蔚蓝档案 (Blue Archive)",
+      "cv": "东山奈央 (Nao Toyama)",
+      "engine": "gpt-sovits",
+      "active_version": "v1.0",
+      "architecture": "GPT-SoVITS-v2",
+      "avatar_symbol": "🌸",
+      "supported_languages": ["ja"],
+      "primary_language": "ja",
+      "description": "蔚蓝档案未花专属日文声线，元气迎接、招牌撒娇与战斗认真声线。",
+      "features": ["live_tts", "preset_demos"],
+      "demos": [
+        {
+          "id": "mika_01_greeting",
+          "title": "元气问候 · 欢迎老师回来",
+          "category": "日常问候",
+          "lang": "ja",
+          "text": "先生、おかえり！待ってたよ！ちゃーんといい子でお留守番してたんだから！",
+          "translation": "老师，欢迎回来！我一直在等您呢！我有乖乖当个好孩子守家哦！",
+          "audio_url": "/assets/audio/mika_samples/mika_01_greeting.wav",
+          "duration": 9.5
+        },
+        {
+          "id": "mika_02_affection",
+          "title": "撒娇互动 · 夸奖我吧",
+          "category": "撒娇娇嗔",
+          "lang": "ja",
+          "text": "先生、私のこと、待っててくれた？わはは～☆ 今日もいっぱい甘やかしてね！",
+          "translation": "老师，您有等我吗？哇哈哈～☆ 今天也要好好宠我哦！",
+          "audio_url": "/assets/audio/mika_samples/mika_02_affection.wav",
+          "duration": 10.02
+        },
+        {
+          "id": "mika_04_combat_serious",
+          "title": "战斗认真 · 守护老师的决心",
+          "category": "战斗认真",
+          "lang": "ja",
+          "text": "ここは私が守るから！あなた達は、ここから先には通さないよ！",
+          "translation": "这里由我来守护！你们休想再往前踏进半步！",
+          "audio_url": "/assets/audio/mika_samples/mika_04_combat_serious.wav",
+          "duration": 8.74
+        }
+      ]
+    },
+    "xiaoshuai": {
+      "character_name": "经典影视速通 (小帅)",
+      "character_source": "短视频影视解说 / 知识科普",
+      "cv": "微软云希 (Edge-TTS)",
+      "engine": "edge-tts",
+      "active_version": "cloud_v1",
+      "architecture": "Edge-TTS Neural",
+      "avatar_symbol": "🎬",
+      "supported_languages": ["zh"],
+      "primary_language": "zh",
+      "description": "全网家喻户晓的影视解说旁白，语速飞快、反转不断，分分钟带你速通一切剧情。",
+      "features": ["live_tts", "preset_demos"],
+      "demos": [
+        {
+          "id": "xiaoshuai_01_classic_intro",
+          "title": "经典开场 · 注意看这个男人",
+          "category": "影视解说",
+          "lang": "zh",
+          "text": "注意看，眼前这个男人叫小帅，他怎么也没想到，自己竟然穿越到了异世界！",
+          "translation": "",
+          "audio_url": "/assets/audio/xiaoshuai_samples/xiaoshuai_01_classic_intro.mp3",
+          "duration": 4.5
+        },
+        {
+          "id": "xiaoshuai_02_suspense_plot",
+          "title": "悬疑转折 · 事情绝没那么简单",
+          "category": "剧情反转",
+          "lang": "zh",
+          "text": "然而事情真的会这么顺利吗？就在当晚，一阵诡异的敲门声突然打破了死寂。",
+          "translation": "",
+          "audio_url": "/assets/audio/xiaoshuai_samples/xiaoshuai_02_suspense_plot.mp3",
+          "duration": 5.0
+        },
+        {
+          "id": "xiaoshuai_03_knowledge_explain",
+          "title": "科普叙事 · 量子技术飞跃",
+          "category": "知识科普",
+          "lang": "zh",
+          "text": "科学家们利用量子纠缠技术，成功在微观粒子层面实现了信息的瞬时传输。",
+          "translation": "",
+          "audio_url": "/assets/audio/xiaoshuai_samples/xiaoshuai_03_knowledge_explain.mp3",
+          "duration": 5.2
+        }
+      ]
+    },
+    "anna": {
+      "character_name": "安娜·锦之宫 (Anna Nishikinomiya)",
+      "character_source": "下流梗不存在的灰暗世界",
+      "cv": "松来未祐 (Miyu Matsuki)",
+      "engine": "gpt-sovits",
+      "active_version": "eval_dataset_v1",
+      "architecture": "Zero-Shot / SOTA Dataset",
+      "avatar_symbol": "🍰",
+      "supported_languages": ["ja"],
+      "primary_language": "ja",
+      "description": "针对二次元声优高表现力（极度狂热咆哮、近距离病娇耳语、端庄会长威严）构建的高保真声学切片矩阵与零样本克隆。",
+      "features": ["live_tts", "preset_demos", "dataset_matrix", "ab_stem"],
+      "demos": [
+        {
+          "id": "anna_cloned_clean",
+          "title": "狂爱呼喊 · 爱的力量 (Zero-Shot 克隆)",
+          "category": "狂热呼喊",
+          "lang": "ja",
+          "text": "愛の力ですわ！狸吉くん、どこへ行こうというのですか！逃げられるはずがありませんわ！",
+          "translation": "是爱的力量啊！狸吉君，你打算逃去哪里呢？你是绝对逃不掉的！",
+          "audio_url": "/assets/audio/anna_cloned_clean.mp3",
+          "duration": 7.76
+        },
+        {
+          "id": "anna_cloned_real",
+          "title": "真声切片对照 · 爱意满溢",
+          "category": "真声音频",
+          "lang": "ja",
+          "text": "狸吉くんへの愛が溢れ出て止まらないのです！",
+          "translation": "对狸吉君的爱意已经满溢得停不下来了！",
+          "audio_url": "/assets/audio/anna_cloned_real_voice.mp3",
+          "duration": 4.5
+        }
+      ]
+    }
+  }
+}

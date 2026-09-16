@@ -1,0 +1,117 @@
+{
+  "character_id": "rimuru",
+  "character_name": "利姆鲁·特恩佩斯特 (Rimuru Tempest)",
+  "character_source": "关于我转生变成史莱姆这档事",
+  "cv": "冈咲美保 (Miho Okasaki)",
+  "version": "v2pro_master",
+  "architecture": "GPT-SoVITS-v2Pro",
+  "status": "evaluating",
+  "created_at": "2026-09-03T15:40:00Z",
+  "weights": {
+    "gpt": "Rimuru_v2Pro_Native-e10.ckpt",
+    "sovits": "Rimuru_v2Pro_e25_s6825.pth"
+  },
+  "training_stats": {
+    "gpt_epochs": 10,
+    "sovits_epochs": 25,
+    "sovits_steps": 6825,
+    "mel_loss": 11.64,
+    "top3_token_acc": 0.78,
+    "dataset": "1082 clips official studio dry vocals, -1.5 dBFS normalized"
+  },
+  "recommended_params": {
+    "temperature": 0.7,
+    "top_k": 5,
+    "top_p": 0.95,
+    "text_split_method": "cut0",
+    "speed_factor": 1.0,
+    "sample_steps": 32,
+    "peak_norm_db": -1.5
+  },
+  "reference_audios": [
+    {
+      "id": "playful",
+      "name": "03_Master_Playful",
+      "audio_file": "reference_audio/03_Master_Playful.wav",
+      "fallback_file": "reference_audio/01_Master_Daily.wav",
+      "transcript_file": "reference_audio/03_Master_Playful.txt",
+      "text": "俺はスライムのリムル！悪いスライムじゃないよ！",
+      "lang": "ja",
+      "emotion": "俏皮活力 / 萌王自夸",
+      "recommended_params": {
+        "temperature": 0.74,
+        "speed_factor": 1.05,
+        "top_k": 5,
+        "top_p": 0.95
+      },
+      "is_default": false
+    },
+    {
+      "id": "confident",
+      "name": "02_Master_Confident",
+      "audio_file": "reference_audio/02_Master_Confident.wav",
+      "transcript_file": "reference_audio/02_Master_Confident.txt",
+      "text": "その名にふさわしく、俺の役に立ってくれ！",
+      "lang": "ja",
+      "emotion": "盟主威严 / 战斗霸气",
+      "recommended_params": {
+        "temperature": 0.7,
+        "speed_factor": 1.02,
+        "top_k": 5,
+        "top_p": 0.95
+      },
+      "is_default": false
+    },
+    {
+      "id": "daily",
+      "name": "01_Master_Daily",
+      "audio_file": "reference_audio/01_Master_Daily.wav",
+      "transcript_file": "reference_audio/01_Master_Daily.txt",
+      "text": "自己紹介がまだだったな 俺はリムル＝テンペスト",
+      "lang": "ja",
+      "emotion": "日常从容 / 盟主自介",
+      "recommended_params": {
+        "temperature": 0.68,
+        "speed_factor": 1.0,
+        "top_k": 5,
+        "top_p": 0.95
+      },
+      "is_default": true
+    },
+    {
+      "id": "gentle",
+      "name": "04_Master_Gentle",
+      "audio_file": "reference_audio/04_Master_Gentle.wav",
+      "fallback_file": "reference_audio/01_Master_Daily.wav",
+      "transcript_file": "reference_audio/04_Master_Gentle.txt",
+      "text": "仲間たちと共に、誰もが笑って暮らせる国を必ず作ってみせるさ。",
+      "lang": "ja",
+      "emotion": "温柔深情 / 羁绊承诺",
+      "recommended_params": {
+        "temperature": 0.65,
+        "speed_factor": 0.95,
+        "top_k": 5,
+        "top_p": 0.95
+      },
+      "is_default": false
+    },
+    {
+      "id": "slacking",
+      "name": "05_Master_Slacking",
+      "audio_file": "reference_audio/05_Master_Slacking.wav",
+      "fallback_file": "reference_audio/01_Master_Daily.wav",
+      "transcript_file": "reference_audio/05_Master_Slacking.txt",
+      "text": "ふぁ〜あ……たまには仕事をサボって温泉に行こう！",
+      "lang": "ja",
+      "emotion": "吐槽摸鱼 / 搞笑无奈",
+      "recommended_params": {
+        "temperature": 0.72,
+        "speed_factor": 1.03,
+        "top_k": 5,
+        "top_p": 0.95
+      },
+      "is_default": false
+    }
+  ],
+  "notes": "v2Pro架构，支持俏皮、威严、日常、温柔、吐槽 5 维情感基准与差异化超参智能调度。"
+}

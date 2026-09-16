@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📚 霞之丘诗羽 (Kasumigaoka Utaha) GPT-SoVITS v4 语音评测听评看板</title>
+  <style>
+    :root {
+      --primary: #a855f7;
+      --primary-hover: #c084fc;
+      --accent: #ec4899;
+      --bg: #09090b;
+      --card-bg: #18181b;
+      --card-border: #27272a;
+      --text: #f4f4f5;
+      --text-muted: #a1a1aa;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2.5rem 1.5rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .badge-tag {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: rgba(168, 85, 247, 0.15);
+      color: #d8b4fe;
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #c084fc 0%, #f472b6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .stat-val {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #f43f5e;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .sample-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .sample-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .sample-card:hover {
+      border-color: rgba(168, 85, 247, 0.5);
+      transform: translateY(-2px);
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .category-badge {
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 6px;
+      background: rgba(244, 63, 94, 0.15);
+      color: #fda4af;
+      border: 1px solid rgba(244, 63, 94, 0.3);
+    }
+    .time-badge {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .dialogue-content {
+      background: #111113;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 3px solid var(--primary);
+    }
+    .jp-text {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fafafa;
+      margin-bottom: 0.35rem;
+    }
+    .zh-text {
+      font-size: 0.88rem;
+      color: #a1a1aa;
+    }
+    .audio-player {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 0.75rem;
+      border-radius: 8px;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid #27272a;
+      padding-top: 0.6rem;
+    }
+    .note-text {
+      color: #e4e4e7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge-tag">GPT-SoVITS v4 (LoRA + DPO) 原生神经网络</div>
+      <h1>📚 霞之丘诗羽 (Kasumigaoka Utaha) 语音评测看板</h1>
+      <p class="subtitle">《路人女主的养成方法》学姐 / 霞之丘詩羽 · CV: 茅野爱衣 | 5类典型情感基准实测</p>
+    </header>
+
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-val">v4 LoRA</div>
+        <div class="stat-label">模型架构 (Layer 32)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">DPO 强化</div>
+        <div class="stat-label">对齐训练算法</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">32 kHz</div>
+        <div class="stat-label">高保真采样率</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">5 / 5</div>
+        <div class="stat-label">情感切片覆盖</div>
+      </div>
+    </div>
+
+    <div class="sample-list">
+      <!-- 01 -->
+      <div class="sample-card">
+        <div class="card-top">
+          <div class="card-title">
+            <span class="category-badge">中立独白</span>
+            中立知性 · 创作者的觉悟
+          </div>
+          <span class="time-badge">⏱️ 7.52s</span>
+        </div>
+        <div class="dialogue-content">
+          <div class="jp-text">「物語の結末を決めるのは、作者の特権であり、義務よ。倫理君、覚悟はできている？」</div>
+          <div class="zh-text">决定故事结局是作者的特权，也是义务。伦理君，你做好心理准备了吗？</div>
+        </div>
+        <audio class="audio-player" controls preload="metadata" src="01_neutral_creator.wav"></audio>
+        <div class="card-footer">
+          <span class="note-text">🎯 重点: 诗羽学姐标志性知性作家声线，冷静叙述与从容语调</span>
+          <span>基准: ref_neutral.wav (中立)</span>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="sample-card">
+        <div class="card-top">
+          <div class="card-title">
+            <span class="category-badge">亲密细腻</span>
+            亲密耳语 · 伦理君的心跳
+          </div>
+          <span class="time-badge">⏱️ 9.47s</span>
+        </div>
+        <div class="dialogue-content">
+          <div class="jp-text">「ふふっ、そんなに私の顔をじっと見つめて……何か言いたいことでもあるの、倫理君？」</div>
+          <div class="zh-text">呵呵，这么目不转睛地看着我的脸……是有什么想说的吗，伦理君？</div>
+        </div>
+        <audio class="audio-player" controls preload="metadata" src="02_intimate_whisper.wav"></audio>
+        <div class="card-footer">
+          <span class="note-text">🎯 重点: 近距离诱惑低语，极细腻气音与微挑逗尾音</span>
+          <span>基准: ref_intimate.wav (亲密)</span>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="sample-card">
+        <div class="card-top">
+          <div class="card-title">
+            <span class="category-badge">害羞微嗔</span>
+            害羞傲娇 · 不是为你写的
+          </div>
+          <span class="time-badge">⏱️ 6.84s</span>
+        </div>
+        <div class="dialogue-content">
+          <div class="jp-text">「べ、別にあなたに読んでもらいたくて書いたんじゃないわよ。勘違いしないでちょうだい。」</div>
+          <div class="zh-text">别、可不是为了想让你读才写的。可别自作多情了。</div>
+        </div>
+        <audio class="audio-player" controls preload="metadata" src="03_shy_tsundere.wav"></audio>
+        <div class="card-footer">
+          <span class="note-text">🎯 重点: 傲娇结巴与慌乱掩饰，急促语气节奏转换</span>
+          <span>基准: ref_shy.wav (害羞)</span>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="sample-card">
+        <div class="card-top">
+          <div class="card-title">
+            <span class="category-badge">不满斥责</span>
+            不满嗔怒 · 截稿前的毒虫
+          </div>
+          <span class="time-badge">⏱️ 7.32s</span>
+        </div>
+        <div class="dialogue-content">
+          <div class="jp-text">「締め切り直前になってプロットを全部白紙に戻すなんて……本気で言っているのかしら、この毒虫。」</div>
+          <div class="zh-text">临近截稿日居然把大纲全推翻重来……你这家伙是认真的吗，毒虫。</div>
+        </div>
+        <audio class="audio-player" controls preload="metadata" src="04_annoyed_deadlock.wav"></audio>
+        <div class="card-footer">
+          <span class="note-text">🎯 重点: 毒舌爱称『毒虫』，冷酷压迫与嘲讽语感</span>
+          <span>基准: ref_annoyed.wav (不满)</span>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="sample-card">
+        <div class="card-top">
+          <div class="card-title">
+            <span class="category-badge">悲伤哀婉</span>
+            悲伤深情 · 再见了我的初恋
+          </div>
+          <span class="time-badge">⏱️ 10.92s</span>
+        </div>
+        <div class="dialogue-content">
+          <div class="jp-text">「さようなら、私の初恋……もう二度と、あの頃の二人には戻れないのね。」</div>
+          <div class="zh-text">再见了，我的初恋……我们已经再也回不到那个时候了吧。</div>
+        </div>
+        <audio class="audio-player" controls preload="metadata" src="05_sad_farewell.wav"></audio>
+        <div class="card-footer">
+          <span class="note-text">🎯 重点: 催泪深情独白，微颤泣声与哀婉尾韵</span>
+          <span>基准: ref_sad.wav (悲伤)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

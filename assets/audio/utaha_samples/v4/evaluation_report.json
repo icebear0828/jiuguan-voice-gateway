@@ -1,0 +1,75 @@
+{
+  "character": "霞之丘诗羽 (Kasumigaoka Utaha)",
+  "version": "v4",
+  "architecture": "GPT-SoVITS-v4 (LoRA + DPO)",
+  "cv": "茅野爱衣 (Ai Kayano)",
+  "total_samples": 5,
+  "generated_at": "2026-09-13T08:46:46Z",
+  "records": [
+    {
+      "id": "01_neutral_creator",
+      "title": "中立知性 · 创作者的觉悟",
+      "category": "中立独白",
+      "text": "物語の結末を決めるのは、作者の特権であり、義務よ。倫理君、覚悟はできている？",
+      "translation": "决定故事结局是作者的特权，也是义务。伦理君，你做好心理准备了吗？",
+      "ref_file": "ref_neutral.wav",
+      "audio_file": "assets/audio/utaha_samples/v4/01_neutral_creator.wav",
+      "duration": 7.52,
+      "infer_time": 83.05,
+      "size_kb": 705.0,
+      "note": "诗羽学姐标志性知性作家声线，检验冷静叙述与语调沉稳感"
+    },
+    {
+      "id": "02_intimate_whisper",
+      "title": "亲密耳语 · 伦理君的心跳",
+      "category": "亲密细腻",
+      "text": "ふふっ、そんなに私の顔をじっと見つめて……何か言いたいことでもあるの、倫理君？",
+      "translation": "呵呵，这么目不转睛地看着我的脸……是有什么想说的吗，伦理君？",
+      "ref_file": "ref_intimate.wav",
+      "audio_file": "assets/audio/utaha_samples/v4/02_intimate_whisper.wav",
+      "duration": 9.47,
+      "infer_time": 60.86,
+      "size_kb": 888.3,
+      "note": "近距离诱惑低语，检验极细腻气音与挑逗尾音"
+    },
+    {
+      "id": "03_shy_tsundere",
+      "title": "害羞傲娇 · 不是为你写的",
+      "category": "害羞微嗔",
+      "text": "べ、別にあなたに読んでもらいたくて書いたんじゃないわよ。勘違いしないでちょうだい。",
+      "translation": "别、可不是为了想让你读才写的。可别自作多情了。",
+      "ref_file": "ref_shy.wav",
+      "audio_file": "assets/audio/utaha_samples/v4/03_shy_tsundere.wav",
+      "duration": 6.84,
+      "infer_time": 41.18,
+      "size_kb": 641.3,
+      "note": "轻度傲娇结巴与掩饰心绪，检验语气急促转换"
+    },
+    {
+      "id": "04_annoyed_deadlock",
+      "title": "不满嗔怒 · 截稿前的毒虫",
+      "category": "不满斥责",
+      "text": "締め切り直前になってプロットを全部白紙に戻すなんて……本気で言っているのかしら、この毒虫。",
+      "translation": "临近截稿日居然把大纲全推翻重来……你这家伙是认真的吗，毒虫。",
+      "ref_file": "ref_annoyed.wav",
+      "audio_file": "assets/audio/utaha_samples/v4/04_annoyed_deadlock.wav",
+      "duration": 7.32,
+      "infer_time": 61.38,
+      "size_kb": 686.3,
+      "note": "标志性毒舌昵称『毒虫』，检验冷酷压迫与嘲弄语调"
+    },
+    {
+      "id": "05_sad_farewell",
+      "title": "悲伤深情 · 再见了我的初恋",
+      "category": "悲伤哀婉",
+      "text": "さようなら、私の初恋……もう二度と、あの頃の二人には戻れないのね。",
+      "translation": "再见了，我的初恋……我们已经再也回不到那个时候了吧。",
+      "ref_file": "ref_sad.wav",
+      "audio_file": "assets/audio/utaha_samples/v4/05_sad_farewell.wav",
+      "duration": 10.92,
+      "infer_time": 82.03,
+      "size_kb": 1023.8,
+      "note": "催泪经典独白，检验微颤泣声与哀婉拖音"
+    }
+  ]
+}

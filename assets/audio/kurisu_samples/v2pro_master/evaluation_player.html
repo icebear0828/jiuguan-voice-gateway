@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧬 牧濑红莉栖 (Makise Kurisu / 助手) GPT-SoVITS 语音效果听评看板</title>
+  <style>
+    :root {
+      --primary: #ef4444;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #f87171;
+      --border: #334155;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 24px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 28px;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      color: var(--accent);
+      font-size: 26px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .sample-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .sample-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.2);
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .sample-title {
+      margin: 0;
+      font-size: 17px;
+      flex-grow: 1;
+    }
+    .badge {
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .badge.category {
+      background: rgba(239, 68, 68, 0.2);
+      color: #fca5a5;
+      border: 1px solid rgba(239, 68, 68, 0.4);
+    }
+    .badge.duration {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+    }
+    .dialogue-box {
+      background: rgba(0,0,0,0.25);
+      border-left: 4px solid var(--accent);
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 12px;
+    }
+    .jp-text {
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 500;
+      color: #e2e8f0;
+    }
+    .zh-trans {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .player-wrapper audio {
+      width: 100%;
+      height: 38px;
+      border-radius: 8px;
+    }
+    .meta-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 8px;
+      border-top: 1px dashed var(--border);
+      padding-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧬 牧瀬紅莉栖 (Makise Kurisu / 助手) GPT-SoVITS 试听看板</h1>
+      <div class="subtitle">STEINS;GATE · CV: 今井麻美 | 模型版本: <b>v2pro_master</b> (2268句录音棚母带微调 · 20/25轮) · 32kHz 高保真还原</div>
+    </header>
+    <div class="sample-grid">
+      
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">傲娇吐槽</span>
+            <h3 class="sample-title">经典傲娇 · 咖啡别误会</h3>
+            <span class="badge duration">⏱️ 5.04s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「べ、別にアンタのために淹れたコーヒーじゃないんだからね！勘違いしないでよ！」</div>
+            <div class="zh-trans">别、别误会了，这可不是专门为你泡的咖啡！可别想歪了啊！</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="01_tsundere_coffee.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 助手殿堂级傲娇名台词，检验口是心非的高频语调起伏</span>
+            <span>🎛️ 温度: 1.0 | 母带: tsundere_CRS_0030.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">怒斥吐槽</span>
+            <h3 class="sample-title">愤怒反驳 · 谁是助手啊</h3>
+            <span class="badge duration">⏱️ 7.52s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「誰が助手よ！私は牧瀬紅莉栖！クリスティーナでも助手でもないって言ってるでしょ、この変態！」</div>
+            <div class="zh-trans">谁是助手啊！我是牧濑红莉栖！都说了我既不是克里斯蒂娜也不是助手，你这个变态！</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="02_tsundere_hentai.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 经典助手称呼反驳，检验语速加快与激烈情绪爆发下的音质清晰度</span>
+            <span>🎛️ 温度: 1.0 | 母带: tsundere_CRS_0030.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">知性科学</span>
+            <h3 class="sample-title">学术论证 · 时间跳跃悖论</h3>
+            <span class="badge duration">⏱️ 6.56s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「時間跳躍の可能性を否定する気はないけれど、タイムパラドックスの矛盾をどう説明するつもり？」</div>
+            <div class="zh-trans">虽然我不打算否定时间跳跃的可能性，但你打算如何解释时间悖论的矛盾？</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="03_science_paradox.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 脑科学家知性论证，检验专业名词平稳咬字与严谨冷静语感</span>
+            <span>🎛️ 温度: 0.85 | 母带: science_CRS_0015.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">深情羁绊</span>
+            <h3 class="sample-title">温柔深情 · 无论哪条世界线</h3>
+            <span class="badge duration">⏱️ 8.18s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「たとえどの世界線にいたとしても、私はきっと、あなたのことを見つけ出すから。」</div>
+            <div class="zh-trans">无论身处在哪条世界线，我都一定会……找到你的。</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="04_gentle_worldline.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 命运石之门催泪名台词，检验极度细腻温存的情感与气声表现</span>
+            <span>🎛️ 温度: 0.8 | 母带: gentle_CRS_0014.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">耳语催促</span>
+            <h3 class="sample-title">动容轻语 · 闭上眼睛笨蛋</h3>
+            <span class="badge duration">⏱️ 8.16s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「目を閉じて……バカ、早く閉じなさいよ。……忘れないで、私はここにいるわ。」</div>
+            <div class="zh-trans">把眼睛闭上……笨蛋，快点闭上啦。……别忘记，我一直都在这里。</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="05_gentle_confession.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 高潮剧情经典告白，检验柔和耳语音、句间呼吸停顿与微颤声线</span>
+            <span>🎛️ 温度: 0.85 | 母带: gentle_CRS_0014.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">日常杂谈</span>
+            <h3 class="sample-title">Lab日常 · 吐槽中二病</h3>
+            <span class="badge duration">⏱️ 3.0s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「また怪しげな実験を始めて……ダル、この狂気のマッドサイエンティストをなんとかしなさいよ。」</div>
+            <div class="zh-trans">又开始搞这种可疑的实验了……桶子，你想办法管管这个狂气疯狂科学家啊。</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="06_daily_lab_banter.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 未来道具研究所日常互动，检验轻松松弛的日常吐槽语调</span>
+            <span>🎛️ 温度: 0.9 | 母带: daily_CRS_0038.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">傲娇慌乱</span>
+            <h3 class="sample-title">慌乱遮掩 · 别看我的手机</h3>
+            <span class="badge duration">⏱️ 6.1s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「ちょ、ちょっと！私のスマホを勝手に見ないで！別にネットの掲示板なんて見てないし！」</div>
+            <div class="zh-trans">等、等等！别随便看我的手机！我才没有在看什么网络论坛呢！</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="07_tsundere_panic.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 栗悟饭与龟波功暗号梗，检验慌乱结巴与语速急促的戏剧感</span>
+            <span>🎛️ 温度: 1.0 | 母带: tsundere_CRS_0030.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">宏大决意</span>
+            <h3 class="sample-title">宏大决意 · 命运石之门的选择</h3>
+            <span class="badge duration">⏱️ 6.14s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「因果の檻を突き破り、シュタインズ・ゲートへと到達する……それが、私たちの選択よ。」</div>
+            <div class="zh-trans">突破因果的囚牢，抵达命运石之门……这就是，我们的选择。</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="08_science_steinsgate.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 长句坚定决绝气势，检验复杂意群连贯性与片假名发音纯正度</span>
+            <span>🎛️ 温度: 0.85 | 母带: science_CRS_0015.wav</span>
+          </div>
+        </div>
+        
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "character_id": "kurisu",
+  "character_name": "牧濑红莉栖 (Makise Kurisu / 助手)",
+  "character_source": "STEINS;GATE (命运石之门)",
+  "cv": "今井麻美 (Asami Imai)",
+  "version": "v2pro_master",
+  "architecture": "GPT-SoVITS-v2Pro",
+  "status": "evaluating",
+  "created_at": "2026-09-03T15:55:00Z",
+  "weights": {
+    "gpt": "Kurisu-e20.ckpt",
+    "sovits": "Kurisu_e25_s9475.pth"
+  },
+  "training_stats": {
+    "gpt_epochs": 20,
+    "gpt_steps": 7420,
+    "sovits_epochs": 25,
+    "sovits_steps": 9475,
+    "top3_token_acc": 0.863,
+    "dataset": "2,268 clean 32kHz studio voice lines, -16.0 LUFS / -1.0 dBFS"
+  },
+  "recommended_params": {
+    "temperature": 1.0,
+    "top_k": 5,
+    "top_p": 1.0,
+    "text_split_method": "cut5",
+    "speed_factor": 1.0,
+    "sample_steps": 32,
+    "peak_norm_db": -1.0
+  },
+  "reference_audios": [
+    {
+      "id": "tsundere",
+      "name": "tsundere_CRS_0030",
+      "audio_file": "reference_audios/tsundere_CRS_0030.wav",
+      "text": "何が真実よ、この変態! 馬鹿なの!? 死ぬの!?",
+      "lang": "ja",
+      "emotion": "傲娇 / 吐槽怒斥",
+      "is_default": true
+    },
+    {
+      "id": "science",
+      "name": "science_CRS_0015",
+      "audio_file": "reference_audios/science_CRS_0015.wav",
+      "text": "どうして?私、前にあなたと会ったことありますか?",
+      "lang": "ja",
+      "emotion": "知性 / 科学论证",
+      "is_default": false
+    },
+    {
+      "id": "gentle",
+      "name": "gentle_CRS_0014",
+      "audio_file": "reference_audios/gentle_CRS_0014.wav",
+      "text": "まるで、今にも泣き出しそうで、それにすごく辛そうでした",
+      "lang": "ja",
+      "emotion": "温柔 / 深情动容",
+      "is_default": false
+    },
+    {
+      "id": "daily",
+      "name": "daily_CRS_0038",
+      "audio_file": "reference_audios/daily_CRS_0038.wav",
+      "text": "こういうのは初めてなので緊張してますが、ガチガチなのは多めに見てください。 どうぞよろしく。",
+      "lang": "ja",
+      "emotion": "Lab日常 / 杂谈",
+      "is_default": false
+    }
+  ],
+  "notes": "助手牧濑红莉栖v2Pro模型，包含傲娇、科学、温柔、日常4种情感基准参考音。"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "file": "reference_audios/tsundere_CRS_0030.wav",
+    "category": "tsundere",
+    "emotion": "傲娇 / 吐槽怒斥",
+    "prompt_text": "何が真実よ、この変態! 馬鹿なの!? 死ぬの!?",
+    "prompt_lang": "ja"
+  },
+  {
+    "file": "reference_audios/science_CRS_0015.wav",
+    "category": "science",
+    "emotion": "知性 / 科学论证",
+    "prompt_text": "どうして?私、前にあなたと会ったことありますか?",
+    "prompt_lang": "ja"
+  },
+  {
+    "file": "reference_audios/gentle_CRS_0014.wav",
+    "category": "gentle",
+    "emotion": "温柔 / 深情动容",
+    "prompt_text": "まるで、今にも泣き出しそうで、それにすごく辛そうでした",
+    "prompt_lang": "ja"
+  },
+  {
+    "file": "reference_audios/daily_CRS_0038.wav",
+    "category": "daily",
+    "emotion": "Lab日常 / 杂谈",
+    "prompt_text": "こういうのは初めてなので緊張してますが、ガチガチなのは多めに見てください。 どうぞよろしく。",
+    "prompt_lang": "ja"
+  }
+]

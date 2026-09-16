@@ -1,0 +1,74 @@
+[
+  {
+    "id": "mika_01_greeting",
+    "category": "日常问候",
+    "description": "元气迎接先生归来",
+    "text": "先生、おかえり！待ってたよ！ちゃーんといい子でお留守番してたんだから！",
+    "filename": "mika_01_greeting.wav",
+    "file_path": "assets/audio/mika_samples/mika_01_greeting.wav",
+    "duration_sec": 9.5,
+    "size_kb": 593.8,
+    "model_type": "GPT-SoVITS (mika-e15.ckpt + mika_e8_s176.pth)",
+    "status": "success"
+  },
+  {
+    "id": "mika_02_affection",
+    "category": "撒娇互动",
+    "description": "未花标志性小恶魔撒娇",
+    "text": "先生、私のこと、待っててくれた？わはは～☆ 今日もいっぱい甘やかしてね！",
+    "filename": "mika_02_affection.wav",
+    "file_path": "assets/audio/mika_samples/mika_02_affection.wav",
+    "duration_sec": 10.02,
+    "size_kb": 626.3,
+    "model_type": "GPT-SoVITS (mika-e15.ckpt + mika_e8_s176.pth)",
+    "status": "success"
+  },
+  {
+    "id": "mika_03_date_invite",
+    "category": "约会邀请",
+    "description": "邀请先生散步",
+    "text": "ん～！今日も良い天気だね！良かったら、仕事終わりにお散歩とかどうかな？☆",
+    "filename": "mika_03_date_invite.wav",
+    "file_path": "assets/audio/mika_samples/mika_03_date_invite.wav",
+    "duration_sec": 9.58,
+    "size_kb": 598.8,
+    "model_type": "GPT-SoVITS (mika-e15.ckpt + mika_e8_s176.pth)",
+    "status": "success"
+  },
+  {
+    "id": "mika_04_combat_serious",
+    "category": "战斗严肃",
+    "description": "战斗认真声线，保护先生",
+    "text": "ここは私が守るから！あなた達は、ここから先には通さないよ！",
+    "filename": "mika_04_combat_serious.wav",
+    "file_path": "assets/audio/mika_samples/mika_04_combat_serious.wav",
+    "duration_sec": 8.74,
+    "size_kb": 546.3,
+    "model_type": "GPT-SoVITS (mika-e15.ckpt + mika_e8_s176.pth)",
+    "status": "success"
+  },
+  {
+    "id": "mika_05_entrance",
+    "category": "登场台词",
+    "description": "招牌登场台词",
+    "text": "聖園ミカ、ついに登場～☆ って感じかな？これからもよろしくね、先生！",
+    "filename": "mika_05_entrance.wav",
+    "file_path": "assets/audio/mika_samples/mika_05_entrance.wav",
+    "duration_sec": 8.7,
+    "size_kb": 543.8,
+    "model_type": "GPT-SoVITS (mika-e15.ckpt + mika_e8_s176.pth)",
+    "status": "success"
+  },
+  {
+    "id": "mika_06_emotional",
+    "category": "深情心声",
+    "description": "真挚深情轻语",
+    "text": "ありがとね、先生。私、堂々と先生のお隣に立てるように頑張るね…！",
+    "filename": "mika_06_emotional.wav",
+    "file_path": "assets/audio/mika_samples/mika_06_emotional.wav",
+    "duration_sec": 8.34,
+    "size_kb": 521.3,
+    "model_type": "GPT-SoVITS (mika-e15.ckpt + mika_e8_s176.pth)",
+    "status": "success"
+  }
+]

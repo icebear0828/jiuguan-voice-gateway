@@ -1,0 +1,128 @@
+[
+  {
+    "id": "playful",
+    "category": "playful",
+    "file": "reference_audio/03_Master_Playful.wav",
+    "fallback_file": "reference_audio/01_Master_Daily.wav",
+    "emotion": "俏皮活力 / 萌王自夸",
+    "prompt_text": "俺はスライムのリムル！悪いスライムじゃないよ！",
+    "fallback_prompt_text": "自己紹介がまだだったな 俺はリムル＝テンペスト",
+    "prompt_lang": "ja",
+    "recommended_params": {
+      "temperature": 0.74,
+      "speed_factor": 1.05,
+      "top_k": 5,
+      "top_p": 0.95
+    },
+    "tags": [
+      "playful",
+      "cute",
+      "俏皮",
+      "卖萌",
+      "开心",
+      "自夸",
+      "史莱姆"
+    ],
+    "is_default": false
+  },
+  {
+    "id": "confident",
+    "category": "confident",
+    "file": "reference_audio/02_Master_Confident.wav",
+    "emotion": "盟主威严 / 战斗霸气",
+    "prompt_text": "その名にふさわしく、俺の役に立ってくれ！",
+    "prompt_lang": "ja",
+    "recommended_params": {
+      "temperature": 0.7,
+      "speed_factor": 1.02,
+      "top_k": 5,
+      "top_p": 0.95
+    },
+    "tags": [
+      "confident",
+      "combat",
+      "angry",
+      "威严",
+      "霸气",
+      "战斗",
+      "愤怒",
+      "命令"
+    ],
+    "is_default": false
+  },
+  {
+    "id": "daily",
+    "category": "daily",
+    "file": "reference_audio/01_Master_Daily.wav",
+    "emotion": "日常从容 / 盟主自介",
+    "prompt_text": "自己紹介がまだだったな 俺はリムル＝テンペスト",
+    "prompt_lang": "ja",
+    "recommended_params": {
+      "temperature": 0.68,
+      "speed_factor": 1.0,
+      "top_k": 5,
+      "top_p": 0.95
+    },
+    "tags": [
+      "daily",
+      "general",
+      "日常",
+      "平静",
+      "自介",
+      "普通"
+    ],
+    "is_default": true
+  },
+  {
+    "id": "gentle",
+    "category": "gentle",
+    "file": "reference_audio/04_Master_Gentle.wav",
+    "fallback_file": "reference_audio/01_Master_Daily.wav",
+    "emotion": "温柔深情 / 羁绊承诺",
+    "prompt_text": "仲間たちと共に、誰もが笑って暮らせる国を必ず作ってみせるさ。",
+    "fallback_prompt_text": "自己紹介がまだだったな 俺はリムル＝テンペスト",
+    "prompt_lang": "ja",
+    "recommended_params": {
+      "temperature": 0.65,
+      "speed_factor": 0.95,
+      "top_k": 5,
+      "top_p": 0.95
+    },
+    "tags": [
+      "gentle",
+      "promise",
+      "温柔",
+      "深情",
+      "治愈",
+      "承诺",
+      "感动"
+    ],
+    "is_default": false
+  },
+  {
+    "id": "slacking",
+    "category": "slacking",
+    "file": "reference_audio/05_Master_Slacking.wav",
+    "fallback_file": "reference_audio/01_Master_Daily.wav",
+    "emotion": "吐槽摸鱼 / 搞笑无奈",
+    "prompt_text": "ふぁ〜あ……たまには仕事をサボって温泉に行こう！",
+    "fallback_prompt_text": "自己紹介がまだだったな 俺はリムル＝テンペスト",
+    "prompt_lang": "ja",
+    "recommended_params": {
+      "temperature": 0.72,
+      "speed_factor": 1.03,
+      "top_k": 5,
+      "top_p": 0.95
+    },
+    "tags": [
+      "slacking",
+      "humor",
+      "吐槽",
+      "摸鱼",
+      "搞笑",
+      "无奈",
+      "怠惰"
+    ],
+    "is_default": false
+  }
+]

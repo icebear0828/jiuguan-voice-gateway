@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>👑 利姆鲁·特恩佩斯特 (Rimuru) GPT-SoVITS v2Pro 语音效果听评看板</title>
+  <style>
+    :root {
+      --primary: #3b82f6;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 24px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 28px;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      color: var(--accent);
+      font-size: 26px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .sample-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .sample-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.2);
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .sample-title {
+      margin: 0;
+      font-size: 17px;
+      flex-grow: 1;
+    }
+    .badge {
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .badge.category {
+      background: rgba(59, 130, 246, 0.2);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.4);
+    }
+    .badge.duration {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+    }
+    .dialogue-box {
+      background: rgba(0,0,0,0.25);
+      border-left: 4px solid var(--accent);
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 12px;
+    }
+    .jp-text {
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 500;
+      color: #e2e8f0;
+    }
+    .zh-trans {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .player-wrapper audio {
+      width: 100%;
+      height: 38px;
+      border-radius: 8px;
+    }
+    .meta-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 8px;
+      border-top: 1px dashed var(--border);
+      padding-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>👑 聖園ミカ & 萌王 (Rimuru) GPT-SoVITS 试听看板</h1>
+      <div class="subtitle">模型版本: <b>v2pro_master</b> (1082句录音棚官方母带干声微调 | 10/25轮) · 32kHz 神经网络高保真还原</div>
+    </header>
+    <div class="sample-grid">
+      
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">日常基准</span>
+            <h3 class="sample-title">日常问候 · 从容和缓</h3>
+            <span class="badge duration">⏱️ 5.54s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「やあ！調子はどうだ？今日もテンペストは平和で、いい日になりそうだね。」</div>
+            <div class="zh-trans">嗨！最近怎么样？今天魔国联邦也很和平，看起来会是个好日子呢。</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="01_greeting_daily.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 检验日常基准声线、发音平稳度与空气感</span>
+            <span>🎛️ 温度: 0.7 | 母带: 01_Master_Daily.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">萌王名台词</span>
+            <h3 class="sample-title">经典台词 · 俏皮活力</h3>
+            <span class="badge duration">⏱️ 7.62s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「俺はスライムのリムル！悪いスライムじゃないよ！……って、前にも言ったっけ？わはは！」</div>
+            <div class="zh-trans">我是史莱姆利姆鲁！不是坏史莱姆哦！……哎，我之前是不是也说过？哇哈哈！</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="02_classic_quote.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 检验高频轻快少女/少年中性音色与笑声语调</span>
+            <span>🎛️ 温度: 0.72 | 母带: 01_Master_Daily.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">情感承诺</span>
+            <h3 class="sample-title">盟主承诺 · 温柔坚定</h3>
+            <span class="badge duration">⏱️ 4.58s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「仲間たちと共に、誰もが笑って暮らせる国を必ず作ってみせるさ。」</div>
+            <div class="zh-trans">与同伴们一起，我一定会建立一个让所有人都能笑着生活下去的国家。</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="03_covenant_leader.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 检验中低速舒缓发音、情感温度与咬字清晰度</span>
+            <span>🎛️ 温度: 0.68 | 母带: 01_Master_Daily.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">真魔王战斗</span>
+            <h3 class="sample-title">战斗威严 · 霸气护短</h3>
+            <span class="badge duration">⏱️ 6.5s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「俺の仲間に手を出したこと、後悔させてやる！そこから一歩も動くなよ！」</div>
+            <div class="zh-trans">敢对我的伙伴出手，我会让你们后悔的！在那给我一步都别动！</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="04_combat_wrath.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 切换威严母带Prompt，检验爆发力、压迫感与破音抑制</span>
+            <span>🎛️ 温度: 0.7 | 母带: 02_Master_Confident.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">内政商榷</span>
+            <h3 class="sample-title">政务决断 · 理性商讨</h3>
+            <span class="badge duration">⏱️ 6.42s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「よし、ドワーフ王国との交易ルートを再確認しよう。みんなの意見も聞かせてくれ。」</div>
+            <div class="zh-trans">好，重新确认一下与矮人王国的贸易路线吧。大家也把意见都说来听听。</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="05_governance_rational.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 检验政务理性从容声线、外来语词汇（ドワーフ）发音自然度</span>
+            <span>🎛️ 温度: 0.68 | 母带: 02_Master_Confident.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">日常幽默</span>
+            <h3 class="sample-title">幽默摸鱼 · 搞笑吐槽</h3>
+            <span class="badge duration">⏱️ 8.3s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「ふぁ〜あ……たまには仕事をサボって、シオンの作った料理……いや、それはパスで！温泉に行こう！」</div>
+            <div class="zh-trans">哈欠……偶尔翘掉工作吃吃紫苑做的料理……不对，那个还是免了吧！我们去泡温泉吧！</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="06_humor_slacking.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 检验叹气（ふぁ〜あ）、紧急转折（いや、それはパスで）等丰富戏剧语气</span>
+            <span>🎛️ 温度: 0.72 | 母带: 01_Master_Daily.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">深情轻语</span>
+            <h3 class="sample-title">深情羁绊 · 静小姐回忆</h3>
+            <span class="badge duration">⏱️ 4.42s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「シズさん、俺はちゃんとこの世界で、みんなと一緒に前に進んでるよ。」</div>
+            <div class="zh-trans">静小姐，我确实在这个世界上，和大家一起好好地前进着呢。</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="07_emotional_memory.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 检验耳语般的柔和低音、气声表现与细腻共鸣</span>
+            <span>🎛️ 温度: 0.65 | 母带: 01_Master_Daily.wav</span>
+          </div>
+        </div>
+        
+        <div class="sample-card">
+          <div class="card-header">
+            <span class="badge category">宏大演说</span>
+            <h3 class="sample-title">长篇剧情演说 · 联邦国宣言</h3>
+            <span class="badge duration">⏱️ 8.58s</span>
+          </div>
+          <div class="dialogue-box">
+            <div class="jp-text">「ジュラ・テンペスト連邦国は、魔物も人間も関係なく、互いを尊重し合える場所だ。俺達の歩みは、決して止まらない！」</div>
+            <div class="zh-trans">鸠拉·特恩佩斯特联邦国，是不论魔物还是人类，都能互相尊重的乐土。我们的脚步，绝不会停下！</div>
+          </div>
+          <div class="player-wrapper">
+            <audio controls preload="metadata" src="08_long_speech.wav"></audio>
+          </div>
+          <div class="meta-footer">
+            <span>🎯 评测重点: 长句复合意群切分（cut0/分句），检验长句稳定性与连贯气势</span>
+            <span>🎛️ 温度: 0.7 | 母带: 01_Master_Daily.wav</span>
+          </div>
+        </div>
+        
+    </div>
+  </div>
+</body>
+</html>
