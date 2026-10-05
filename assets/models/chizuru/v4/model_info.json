@@ -1,0 +1,180 @@
+{
+  "character_id": "chizuru",
+  "character_name": "水原千鹤 (Mizuhara Chizuru / 一之濑千鹤)",
+  "character_source": "租借女友 (彼女、お借りします / Rent-A-Girlfriend)",
+  "cv": "雨宫天 (Sora Amamiya)",
+  "version": "v4",
+  "architecture": "GPT-SoVITS-v4",
+  "status": "active",
+  "created_at": "2026-06-07T12:00:00Z",
+  "weights": {
+    "gpt": "水原千鹤-v4dpo-20260607-e10.ckpt",
+    "sovits": "水原千鹤-v4dpo-20260607_e16_s464_l32.pth"
+  },
+  "training_stats": {
+    "gpt_epochs": 10,
+    "sovits_epochs": 16,
+    "sovits_steps": 464,
+    "if_dpo": true,
+    "architecture_notes": "GPT-SoVITS v4 LoRA (layer 32) + DPO Alignment"
+  },
+  "recommended_params": {
+    "temperature": 0.8,
+    "top_k": 5,
+    "top_p": 0.95,
+    "speed_factor": 1.0
+  },
+  "reference_audios": [
+    {
+      "id": "daily",
+      "name": "default_daily",
+      "audio_file": "reference_audios/ref_default.wav",
+      "text": "ちょっと考えてみて、よかったら教えて。",
+      "lang": "ja",
+      "emotion": "默认 / 日常从容",
+      "is_default": true,
+      "recommended_params": {
+        "temperature": 0.8,
+        "speed_factor": 1.0,
+        "top_k": 5,
+        "top_p": 0.95
+      }
+    },
+    {
+      "id": "gentle",
+      "name": "gentle_confession",
+      "audio_file": "reference_audios/ref_gentle.wav",
+      "text": "私、あなたの彼女…だろう？",
+      "lang": "ja",
+      "emotion": "温柔 / 恋人契约",
+      "is_default": false,
+      "recommended_params": {
+        "temperature": 0.75,
+        "speed_factor": 0.95,
+        "top_k": 5,
+        "top_p": 0.95
+      }
+    },
+    {
+      "id": "intimate",
+      "name": "intimate_date",
+      "audio_file": "reference_audios/ref_intimate.wav",
+      "text": "じゃあ、いつもより伸び伸びしたデート、期待してるね。",
+      "lang": "ja",
+      "emotion": "亲密 / 约会期待",
+      "is_default": false,
+      "recommended_params": {
+        "temperature": 0.8,
+        "speed_factor": 1.0,
+        "top_k": 5,
+        "top_p": 0.95
+      }
+    },
+    {
+      "id": "tsundere",
+      "name": "tsundere_denial",
+      "audio_file": "reference_audios/ref_tsundere.wav",
+      "text": "別に、あなたと行くなんて言ってないけど。",
+      "lang": "ja",
+      "emotion": "傲娇 / 口是心非",
+      "is_default": false,
+      "recommended_params": {
+        "temperature": 0.85,
+        "speed_factor": 1.05,
+        "top_k": 5,
+        "top_p": 0.95
+      }
+    },
+    {
+      "id": "shy",
+      "name": "shy_heartbeat",
+      "audio_file": "reference_audios/ref_shy.wav",
+      "text": "私も久しぶりで、なんだかドキドキしてきちゃって",
+      "lang": "ja",
+      "emotion": "害羞 / 心跳加速",
+      "is_default": false,
+      "recommended_params": {
+        "temperature": 0.8,
+        "speed_factor": 0.98,
+        "top_k": 5,
+        "top_p": 0.95
+      }
+    },
+    {
+      "id": "annoyed",
+      "name": "annoyed_hangup",
+      "audio_file": "reference_audios/ref_annoyed.wav",
+      "text": "これで大した用じゃなかったらもう速攻で切るから。",
+      "lang": "ja",
+      "emotion": "不满 / 嗔怒挂断",
+      "is_default": false,
+      "recommended_params": {
+        "temperature": 0.85,
+        "speed_factor": 1.05,
+        "top_k": 5,
+        "top_p": 0.95
+      }
+    },
+    {
+      "id": "happy",
+      "name": "happy_cheerful",
+      "audio_file": "reference_audios/ref_happy.wav",
+      "text": "喜んでくれて、私も嬉しい！",
+      "lang": "ja",
+      "emotion": "开心 / 阳光明媚",
+      "is_default": false,
+      "recommended_params": {
+        "temperature": 0.85,
+        "speed_factor": 1.05,
+        "top_k": 5,
+        "top_p": 0.95
+      }
+    },
+    {
+      "id": "excited",
+      "name": "excited_penguin",
+      "audio_file": "reference_audios/ref_excited.wav",
+      "text": "わー見て見て、ペンギンいるよ！よちよち歩いてかわいい。",
+      "lang": "ja",
+      "emotion": "兴奋 / 元气雀跃",
+      "is_default": false,
+      "recommended_params": {
+        "temperature": 0.9,
+        "speed_factor": 1.1,
+        "top_k": 5,
+        "top_p": 0.95
+      }
+    },
+    {
+      "id": "sad",
+      "name": "sad_sunset",
+      "audio_file": "reference_audios/ref_sad.wav",
+      "text": "楽しかった分、夕焼けを見てると、ちょっと寂しくなっちゃうね。",
+      "lang": "ja",
+      "emotion": "消沉 / 黄昏落寞",
+      "is_default": false,
+      "recommended_params": {
+        "temperature": 0.75,
+        "speed_factor": 0.92,
+        "top_k": 5,
+        "top_p": 0.95
+      }
+    },
+    {
+      "id": "angry",
+      "name": "angry_flustered",
+      "audio_file": "reference_audios/ref_angry.wav",
+      "text": "あやだ、本当だ！もう夜に干すんじゃなかった！",
+      "lang": "ja",
+      "emotion": "生气 / 急躁抓狂",
+      "is_default": false,
+      "recommended_params": {
+        "temperature": 0.9,
+        "speed_factor": 1.08,
+        "top_k": 5,
+        "top_p": 0.95
+      }
+    }
+  ],
+  "notes": "水原千鹤GPT-SoVITS v4 DPO对齐微调模型，覆盖默认、温柔、亲密、傲娇、害羞、不满、开心、兴奋、消沉、生气等多维度情感声线。"
+}

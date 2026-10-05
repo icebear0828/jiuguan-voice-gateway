@@ -36,6 +36,17 @@ HEURISTIC_KEYWORDS = {
         "shy": ["勘違い", "別に", "激しく", "優しく", "恥ずかしい"],
         "sad": ["さようなら", "初恋", "戻れない", "泣", "辛い", "悲しい"],
         "neutral": ["小説", "作家", "物語", "義務", "特権", "原稿"]
+    },
+    "chizuru": {
+        "gentle": ["彼女", "私", "デート", "大事", "時間", "またね", "契約"],
+        "intimate": ["伸び伸び", "期待", "ふふ", "一緒", "手をつな", "二人"],
+        "tsundere": ["別に", "勘違い", "言ってない", "バカ", "何よ", "あなたと"],
+        "shy": ["ドキドキ", "久しぶり", "恥ずかしい", "赤く", "顔"],
+        "annoyed": ["大した用", "速攻", "切る", "もう", "何なの"],
+        "excited": ["見て見て", "ペンギン", "わー", "すごい", "かわいい", "きゃー"],
+        "happy": ["嬉しい", "喜んで", "よかった", "ありがとう", "笑顔"],
+        "sad": ["寂しく", "夕焼け", "さようなら", "終わり", "切ない"],
+        "angry": ["夜に干す", "本当だ", "怒", "もう！"]
     }
 }
 
@@ -98,6 +109,10 @@ class VoiceRouter:
             if active_ver and active_ver in char_data.get("versions", {}):
                 rel_dir = char_data["versions"][active_ver]["model_dir"]
                 return os.path.join(MODELS_DIR, rel_dir)
+            if active_ver and os.path.isdir(os.path.join(MODELS_DIR, character, active_ver)):
+                return os.path.join(MODELS_DIR, character, active_ver)
+            if os.path.exists(os.path.join(MODELS_DIR, character, "current")):
+                return os.path.join(MODELS_DIR, character, "current")
         except Exception:
             pass
         return os.path.join(MODELS_DIR, character, "v2pro_master")
@@ -375,6 +390,12 @@ class VoiceRouter:
             elif character == "mika":
                 gpt_path = os.path.join(MODELS_DIR, "mika/mika-e15.ckpt")
                 sovits_path = os.path.join(MODELS_DIR, "mika/mika_e8_s176.pth")
+            elif character == "utaha":
+                gpt_path = os.path.join(MODELS_DIR, "utaha/v4/霞之丘诗羽_01-e10.ckpt")
+                sovits_path = os.path.join(MODELS_DIR, "utaha/v4/霞之丘诗羽_01_e16_s368_l32.pth")
+            elif character == "chizuru":
+                gpt_path = os.path.join(MODELS_DIR, "chizuru/v4/水原千鹤-v4dpo-20260607-e10.ckpt")
+                sovits_path = os.path.join(MODELS_DIR, "chizuru/v4/水原千鹤-v4dpo-20260607_e16_s464_l32.pth")
 
         if not (os.path.exists(gpt_path) and os.path.exists(sovits_path)):
             print(f"[VoiceRouter] Missing model weights for {character}: GPT={gpt_path}, SoVITS={sovits_path}")

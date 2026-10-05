@@ -134,6 +134,14 @@
       "primary_language": "ja",
       "description": "GPT-SoVITS v4 LoRA架构 + DPO对齐，细腻拿捏中立作家独白、挑逗耳语、害羞微嗔与毒舌责难。",
       "features": ["live_tts", "preset_demos"],
+      "versions": {
+        "v4": {
+          "version": "v4",
+          "model_dir": "utaha/v4",
+          "status": "evaluating",
+          "description": "GPT-SoVITS v4 LoRA架构 + DPO对齐"
+        }
+      },
       "demos": [
         {
           "id": "01_neutral_creator",
@@ -174,6 +182,89 @@
           "translation": "临近截稿日居然把大纲全推翻重来……你这家伙是认真的吗，毒虫。",
           "audio_url": "/assets/audio/utaha_samples/v4/04_annoyed_deadlock.wav",
           "duration": 7.32
+        }
+      ]
+    },
+    "chizuru": {
+      "character_name": "水原千鹤 (Mizuhara Chizuru / 一之濑千鹤)",
+      "character_source": "租借女友 (彼女、お借りします)",
+      "cv": "雨宫天 (Sora Amamiya)",
+      "engine": "gpt-sovits",
+      "active_version": "v4",
+      "architecture": "GPT-SoVITS-v4 (LoRA + DPO)",
+      "avatar_symbol": "💎",
+      "supported_languages": ["ja"],
+      "primary_language": "ja",
+      "description": "GPT-SoVITS v4 LoRA架构 + DPO对齐，细腻演绎治愈温柔、傲娇吃醋、元气营业、害羞心跳与私下真性情。",
+      "features": ["live_tts", "preset_demos"],
+      "versions": {
+        "v4": {
+          "version": "v4",
+          "model_dir": "chizuru/v4",
+          "status": "active",
+          "description": "GPT-SoVITS v4 LoRA架构 + DPO对齐"
+        }
+      },
+      "demos": [
+        {
+          "id": "01_gentle_girlfriend",
+          "title": "温柔恋人 · 你的女朋友",
+          "category": "恋人契约",
+          "lang": "ja",
+          "text": "私、あなたの彼女…だろう？",
+          "translation": "我不是……你的女朋友吗？",
+          "audio_url": "/assets/audio/chizuru_samples/v4/01_gentle_girlfriend.wav",
+          "duration": 3.98
+        },
+        {
+          "id": "02_intimate_date",
+          "title": "亲密期待 · 放松的约会",
+          "category": "约会期待",
+          "lang": "ja",
+          "text": "じゃあ、いつもより伸び伸びしたデート、期待してるね。",
+          "translation": "那么，就期待一次比平时更轻松自在的约会啰。",
+          "audio_url": "/assets/audio/chizuru_samples/v4/02_intimate_date.wav",
+          "duration": 4.54
+        },
+        {
+          "id": "03_tsundere_denial",
+          "title": "口是心非 · 才不是想和你去",
+          "category": "傲娇否认",
+          "lang": "ja",
+          "text": "別に、あなたと行くなんて言ってないけど。",
+          "translation": "我可没说要和你一起去啊。",
+          "audio_url": "/assets/audio/chizuru_samples/v4/03_tsundere_denial.wav",
+          "duration": 3.50
+        },
+        {
+          "id": "04_shy_heartbeat",
+          "title": "害羞心跳 · 怎么心跳加速了",
+          "category": "害羞悸动",
+          "lang": "ja",
+          "text": "私も久しぶりで、なんだかドキドキしてきちゃって。",
+          "translation": "我也是好久没这样了，不知怎么的心跳都加速了。",
+          "audio_url": "/assets/audio/chizuru_samples/v4/04_shy_heartbeat.wav",
+          "duration": 4.56
+        },
+        {
+          "id": "05_excited_penguin",
+          "title": "元气雀跃 · 看水族馆的企鹅",
+          "category": "元气欢快",
+          "lang": "ja",
+          "text": "わー見て見て、ペンギンいるよ！よちよち歩いてかわいい。",
+          "translation": "哇——快看快看，有企鹅耶！摇摇晃晃走着太可爱了吧。",
+          "audio_url": "/assets/audio/chizuru_samples/v4/05_excited_penguin.wav",
+          "duration": 6.69
+        },
+        {
+          "id": "06_sad_sunset",
+          "title": "黄昏落寞 · 夕阳下的不舍",
+          "category": "消沉落寞",
+          "lang": "ja",
+          "text": "楽しかった分、夕焼けを見てると、ちょっと寂しくなっちゃうね。",
+          "translation": "越是开心，看着夕阳的时候就越觉得有些落寞呢。",
+          "audio_url": "/assets/audio/chizuru_samples/v4/06_sad_sunset.wav",
+          "duration": 5.49
         }
       ]
     },

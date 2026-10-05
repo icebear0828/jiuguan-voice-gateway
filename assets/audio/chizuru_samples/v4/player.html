@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💎 水原千鹤 (Mizuhara Chizuru) GPT-SoVITS v4 语音评测看板</title>
+  <style>
+    :root {
+      --primary: #ec4899;
+      --primary-hover: #f472b6;
+      --accent: #06b6d4;
+      --bg: #09090b;
+      --card-bg: #18181b;
+      --card-border: #27272a;
+      --text: #f4f4f5;
+      --text-muted: #a1a1aa;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2.5rem 1.5rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .badge-tag {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: rgba(236, 72, 153, 0.15);
+      color: #f472b6;
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #f472b6 0%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .stat-val {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ec4899;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .sample-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .sample-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .sample-card:hover {
+      border-color: rgba(236, 72, 153, 0.5);
+      transform: translateY(-2px);
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .category-badge {
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 6px;
+      background: rgba(236, 72, 153, 0.15);
+      color: #f472b6;
+      border: 1px solid rgba(236, 72, 153, 0.3);
+    }
+    .time-badge {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .dialogue-content {
+      background: #111113;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 3px solid var(--primary);
+    }
+    .jp-text {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fafafa;
+      margin-bottom: 0.35rem;
+    }
+    .zh-text {
+      font-size: 0.88rem;
+      color: #a1a1aa;
+    }
+    .audio-player {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 0.75rem;
+      border-radius: 8px;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid #27272a;
+      padding-top: 0.6rem;
+    }
+    .note-text {
+      color: #e4e4e7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge-tag">GPT-SoVITS v4 (LoRA + DPO) 原生神经网络</div>
+      <h1>💎 水原千鹤 (Mizuhara Chizuru) 语音评测看板</h1>
+      <p class="subtitle">《租借女友》一之濑千鹤 · CV: 雨宫天 | 6组官方多维情感基准试听</p>
+    </header>
+
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-val">v4 LoRA</div>
+        <div class="stat-label">模型架构 (Layer 32)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">DPO 对齐</div>
+        <div class="stat-label">强化微调算法</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">32 kHz</div>
+        <div class="stat-label">采样率 (高保真)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val">10 情感切片</div>
+        <div class="stat-label">参考提示音频数</div>
+      </div>
+    </div>
+
+    <div class="sample-list">
+      <!-- 01 Gentle Girlfriend -->
+      <div class="sample-card">
+        <div class="card-top">
+          <div class="card-title">
+            <span>01. 温柔恋人 · 你的女朋友</span>
+            <span class="category-badge">恋人契约</span>
+          </div>
+          <div class="time-badge">⏱️ 3.98s</div>
+        </div>
+        <div class="dialogue-content">
+          <div class="jp-text">「私、あなたの彼女…だろう？」</div>
+          <div class="zh-text">译文：我不是……你的女朋友吗？</div>
+        </div>
+        <audio class="audio-player" controls preload="metadata" src="01_gentle_girlfriend.wav"></audio>
+        <div class="card-footer">
+          <span>声线特征: 温柔沉稳，微带迷茫与认真</span>
+          <span class="note-text">推荐场景: 告白、夜景漫步、羁绊契约</span>
+        </div>
+      </div>
+
+      <!-- 02 Intimate Date -->
+      <div class="sample-card">
+        <div class="card-top">
+          <div class="card-title">
+            <span>02. 亲密期待 · 放松的约会</span>
+            <span class="category-badge">约会期待</span>
+          </div>
+          <div class="time-badge">⏱️ 4.54s</div>
+        </div>
+        <div class="dialogue-content">
+          <div class="jp-text">「じゃあ、いつもより伸び伸びしたデート、期待してるね。」</div>
+          <div class="zh-text">译文：那么，就期待一次比平时更轻松自在的约会啰。</div>
+        </div>
+        <audio class="audio-player" controls preload="metadata" src="02_intimate_date.wav"></audio>
+        <div class="card-footer">
+          <span>声线特征: 亲切从容，带有成熟大姐姐的微笑感</span>
+          <span class="note-text">推荐场景: 约会启程、日常寒暄、互动鼓励</span>
+        </div>
+      </div>
+
+      <!-- 03 Tsundere Denial -->
+      <div class="sample-card">
+        <div class="card-top">
+          <div class="card-title">
+            <span>03. 口是心非 · 才不是想和你去</span>
+            <span class="category-badge">傲娇否认</span>
+          </div>
+          <div class="time-badge">⏱️ 3.50s</div>
+        </div>
+        <div class="dialogue-content">
+          <div class="jp-text">「別に、あなたと行くなんて言ってないけど。」</div>
+          <div class="zh-text">译文：我可没说要和你一起去啊。</div>
+        </div>
+        <audio class="audio-player" controls preload="metadata" src="03_tsundere_denial.wav"></audio>
+        <div class="card-footer">
+          <span>声线特征: 语速稍急，别扭傲娇，掩饰真心</span>
+          <span class="note-text">推荐场景: 吃醋、私下偶遇、被戳中小心思</span>
+        </div>
+      </div>
+
+      <!-- 04 Shy Heartbeat -->
+      <div class="sample-card">
+        <div class="card-top">
+          <div class="card-title">
+            <span>04. 害羞心跳 · 怎么心跳加速了</span>
+            <span class="category-badge">害羞悸动</span>
+          </div>
+          <div class="time-badge">⏱️ 4.56s</div>
+        </div>
+        <div class="dialogue-content">
+          <div class="jp-text">「私も久しぶりで、なんだかドキドキしてきちゃって。」</div>
+          <div class="zh-text">译文：我也是好久没这样了，不知怎么的心跳都加速了。</div>
+        </div>
+        <audio class="audio-player" controls preload="metadata" src="04_shy_heartbeat.wav"></audio>
+        <div class="card-footer">
+          <span>声线特征: 气息微促，细腻耳语，真情流露</span>
+          <span class="note-text">推荐场景: 距离拉近、心跳互动、月下独处</span>
+        </div>
+      </div>
+
+      <!-- 05 Excited Penguin -->
+      <div class="sample-card">
+        <div class="card-top">
+          <div class="card-title">
+            <span>05. 元气雀跃 · 看水族馆的企鹅</span>
+            <span class="category-badge">元气欢快</span>
+          </div>
+          <div class="time-badge">⏱️ 6.69s</div>
+        </div>
+        <div class="dialogue-content">
+          <div class="jp-text">「わー見て見て、ペンギンいるよ！よちよち歩いてかわいい。」</div>
+          <div class="zh-text">译文：哇——快看快看，有企鹅耶！摇摇晃晃走着太可爱了吧。</div>
+        </div>
+        <audio class="audio-player" controls preload="metadata" src="05_excited_penguin.wav"></audio>
+        <div class="card-footer">
+          <span>声线特征: 声调上扬，元气少女心，开朗欢快</span>
+          <span class="note-text">推荐场景: 游乐园、水族馆出游、发现新鲜事物</span>
+        </div>
+      </div>
+
+      <!-- 06 Sad Sunset -->
+      <div class="sample-card">
+        <div class="card-top">
+          <div class="card-title">
+            <span>06. 黄昏落寞 · 夕阳下的不舍</span>
+            <span class="category-badge">消沉落寞</span>
+          </div>
+          <div class="time-badge">⏱️ 5.49s</div>
+        </div>
+        <div class="dialogue-content">
+          <div class="jp-text">「楽しかった分、夕焼けを見てると、ちょっと寂しくなっちゃうね。」</div>
+          <div class="zh-text">译文：越是开心，看着夕阳的时候就越觉得有些落寞呢。</div>
+        </div>
+        <audio class="audio-player" controls preload="metadata" src="06_sad_sunset.wav"></audio>
+        <div class="card-footer">
+          <span>声线特征: 语速放缓，声线柔和带有些许忧伤</span>
+          <span class="note-text">推荐场景: 约会尾声、离别之际、回程电车</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

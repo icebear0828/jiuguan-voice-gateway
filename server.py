@@ -401,7 +401,7 @@ class VoiceGatewayHandler(BaseHTTPRequestHandler):
 
             # Route 2: Native GPT-SoVITS Engine
             target_char = "kurisu"
-            vm_lower = (voice_mode or "").lower()
+            vm_lower = f"{(voice_mode or '')} {(voice or '')}".lower()
             if any(k in vm_lower for k in ["rimuru", "萌王", "利姆鲁"]):
                 target_char = "rimuru"
             elif any(k in vm_lower for k in ["mika", "未花", "圣园"]):
@@ -410,6 +410,8 @@ class VoiceGatewayHandler(BaseHTTPRequestHandler):
                 target_char = "kurisu"
             elif any(k in vm_lower for k in ["utaha", "诗羽", "霞之丘"]):
                 target_char = "utaha"
+            elif any(k in vm_lower for k in ["chizuru", "千鹤", "水原", "mizuhara"]):
+                target_char = "chizuru"
 
             req_emotion = data.get("emotion")
             plan = VoiceRouter.resolve_plan(
