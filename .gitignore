@@ -59,3 +59,9 @@ scratch/
 tmp/
 temp/
 assets/audio/*_test_*.wav
+data_incoming/
+assets/cleaned_dataset/
+assets/my_gpt_dataset/
+assets/tts_eval_samples/
+assets/user_recordings/
+static

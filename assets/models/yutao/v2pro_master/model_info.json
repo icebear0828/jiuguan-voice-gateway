@@ -1,0 +1,49 @@
+{
+  "character_id": "yutao",
+  "character_name": "宇涛 (私有音色 / Yutao)",
+  "character_source": "用户专属私有音色 (my_voice_private)",
+  "cv": "yutao",
+  "version": "v2pro_master",
+  "architecture": "GPT-SoVITS-v2Pro",
+  "status": "active",
+  "created_at": "2026-10-06T02:53:00Z",
+  "weights": {
+    "gpt": "my_voice_private-e4.ckpt",
+    "sovits": "my_voice_private_e4_s76.pth"
+  },
+  "backup_weights": {
+    "gpt": "my_voice_private-e8.ckpt",
+    "sovits": "my_voice_private_e8_s152.pth"
+  },
+  "training_stats": {
+    "gpt_epochs": 4,
+    "sovits_epochs": 4,
+    "sovits_steps": 76,
+    "architecture_notes": "GPT-SoVITS v2Pro 架构私有声音克隆"
+  },
+  "recommended_params": {
+    "temperature": 0.6,
+    "top_k": 5,
+    "top_p": 0.8,
+    "repetition_penalty": 1.35,
+    "speed_factor": 1.0
+  },
+  "reference_audios": [
+    {
+      "id": "default",
+      "name": "prompt_reference",
+      "audio_file": "reference_audio/prompt_reference.wav",
+      "text": "在语音合成的流水线中，声学物理门禁和声纹质检能够拦截绝大多数劣质样本。",
+      "lang": "zh",
+      "emotion": "默认 / 自然原声",
+      "is_default": true,
+      "recommended_params": {
+        "temperature": 0.6,
+        "speed_factor": 1.0,
+        "top_k": 5,
+        "top_p": 0.8
+      }
+    }
+  ],
+  "notes": "用户专属私有声音资产 (v2Pro)，适合解说、朗读与个性化语音合成。"
+}

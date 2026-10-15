@@ -74,3 +74,36 @@ VOICE_GATEWAY_PORT=8888 VOICE_GATEWAY_HOST=0.0.0.0 python3 server.py
      "input": "{{text}}"
    }
    ```
+
+---
+
+## 🛡️ 工业级 4-Stage 语音质检漏斗与自蒸馏飞轮
+
+本项目内置面向二次元角色高保真语音合成的 **4-Stage (+ Stage 3.5) 质检漏斗流水线 (`QualityPipeline`)**，并结合 **Best-of-N 拒绝采样** 打造无损自蒸馏闭环：
+
+```
+待测合成语音 ──► [Stage 1: 声学物理与自愈] ──► [Stage 2: 语义与音素PER] ──► [Stage 3: 多情绪原型声纹] ──► [Stage 3.5: F0韵律与Siri腔拦截] ──► [Stage 4: UTMOS与破音跳变检测] ──► 极品合格语音 ──► 5:5 动态退火自蒸馏
+```
+
+- **Stage 1 (声学物理门禁)**：`pyloudnorm` Integrated LUFS（-18.0）+ True Peak 4x 过采样防爆音；`[whisper]` 弱音标签增益豁免；局部 VAD 句中卡壳检测（`max_internal_silence <= 600ms`）；20ms Cosine Fade 平滑自愈。
+- **Stage 2 (语义对齐门禁)**：`cn2an` 前置双向口语正则化；`pypinyin` / `pyopenjtalk` 音素级 PER 序列校验（拦截多音字字对音错）；差集复读机与尾音死拖长拦截。
+- **Stage 3 (音色一致性门禁)**：多情绪原型锚点池（Multi-Prototype Anchors）+ Max-Pooling；超短音频（$<1.5\text{s}$）自适应动态门限。
+- **Stage 3.5 (韵律表现力门禁)**：基频起伏度（`Pitch Std >= 12Hz`）与半音范围，精准拦截平直冷漠的“Siri机器人棒读”；Prompt 情绪对齐防傲娇坍塌为 neutral。
+- **Stage 4 (神经 MOS 门禁)**：生成式 TTS 专用评估器 `UTMOSVerifier`；高频金属电音与梳状滤波识别；RMVPE / F0 连续性瞬态破音跳变捕捉。
+- **自蒸馏闭环飞轮**：5:5 动态退火配比（50% 原声 + 50% 极品合成，杜绝模型方差坍塌）+ 领域词特征加权 + **Best-of-N 拒绝采样（Rejection Sampling）** 择优录取。
+
+📖 **深入了解算法原理与技术规范**：请参阅 [QUALITY_FUNNEL_AND_DISTILLATION.md](docs/QUALITY_FUNNEL_AND_DISTILLATION.md)。
+
+---
+
+## 🧪 自动化测试与工程验收
+
+运行全套 113 项核心测试与系统级验收审计：
+
+```bash
+# 激活虚拟环境并安装开发依赖
+pip install -r requirements.txt -r requirements-dev.txt
+
+# 运行全量代码与质检门禁审计
+make audit
+```

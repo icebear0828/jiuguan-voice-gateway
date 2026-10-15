@@ -402,7 +402,9 @@ class VoiceGatewayHandler(BaseHTTPRequestHandler):
             # Route 2: Native GPT-SoVITS Engine
             target_char = "kurisu"
             vm_lower = f"{(voice_mode or '')} {(voice or '')}".lower()
-            if any(k in vm_lower for k in ["rimuru", "萌王", "利姆鲁"]):
+            if any(k in vm_lower for k in ["yutao", "宇涛", "my_voice", "private", "本人", "自己"]):
+                target_char = "yutao"
+            elif any(k in vm_lower for k in ["rimuru", "萌王", "利姆鲁"]):
                 target_char = "rimuru"
             elif any(k in vm_lower for k in ["mika", "未花", "圣园"]):
                 target_char = "mika"
@@ -429,7 +431,14 @@ class VoiceGatewayHandler(BaseHTTPRequestHandler):
             # Ensure model weights hot-loaded
             VoiceRouter.ensure_character_weights(target_char)
 
-            target_lang = "ja" if language.lower() in ["ja", "japanese"] else "zh"
+            if language.lower() in ["ja", "japanese"]:
+                target_lang = "ja"
+            elif language.lower() in ["zh", "chinese"]:
+                target_lang = "zh"
+            elif target_char == "yutao":
+                target_lang = "zh"
+            else:
+                target_lang = "ja"
 
             gpt_sovits_payload = {
                 "text": plan.clean_text,

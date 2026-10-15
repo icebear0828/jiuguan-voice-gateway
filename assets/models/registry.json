@@ -392,6 +392,31 @@
           "duration": 4.5
         }
       ]
+    },
+    "yutao": {
+      "character_name": "宇涛 (私有音色 / Yutao)",
+      "character_source": "用户专属私有音色 (my_voice_private)",
+      "cv": "yutao",
+      "engine": "gpt-sovits",
+      "active_version": "v2pro_master",
+      "architecture": "GPT-SoVITS-v2Pro",
+      "avatar_symbol": "🎙️",
+      "supported_languages": ["zh", "ja"],
+      "primary_language": "zh",
+      "description": "用户专属私有声音资产 (v2Pro架构)，自训练咬字清晰，适合个性化解说、旁白与对话。",
+      "features": ["live_tts", "preset_demos"],
+      "demos": [
+        {
+          "id": "yutao_prompt_demo",
+          "title": "自然原声 · 质检基准",
+          "category": "自然原声",
+          "lang": "zh",
+          "text": "在语音合成的流水线中，声学物理门禁和声纹质检能够拦截绝大多数劣质样本。",
+          "translation": "",
+          "audio_url": "/assets/audio/yutao_samples/v2pro_master/prompt_reference.wav",
+          "duration": 5.6
+        }
+      ]
     }
   }
 }

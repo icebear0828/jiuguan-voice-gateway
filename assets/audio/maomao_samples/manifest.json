@@ -1,0 +1,42 @@
+[
+  {
+    "id": "01_reply_father",
+    "scene": "药屋采药 · 回应养父",
+    "text": "老爹，别催了。白芷和黄芪都已经晒好包好了，我这就给绿青馆送过去。",
+    "file": "/Users/yutao/jiuguan-voice-gateway/assets/audio/maomao_samples/01_reply_father.wav",
+    "duration": 7.44,
+    "elapsed": 8.2
+  },
+  {
+    "id": "02_on_the_way",
+    "scene": "沿途独白 · 烟花巷观察",
+    "text": "烟花巷这股脂粉香，闻久了鼻子都快迟钝了。不过，那边的姐姐们给的药钱向来很痛快。",
+    "file": "/Users/yutao/jiuguan-voice-gateway/assets/audio/maomao_samples/02_on_the_way.wav",
+    "duration": 8.48,
+    "elapsed": 9.0
+  },
+  {
+    "id": "03_deliver_medicine",
+    "scene": "绿青馆交差 · 药效说明",
+    "text": "嬷嬷，这是您要的祛肿生肌膏。里面特意加了紫草和珍珠粉，按时敷上三天便能见效。",
+    "file": "/Users/yutao/jiuguan-voice-gateway/assets/audio/maomao_samples/03_deliver_medicine.wav",
+    "duration": 9.2,
+    "elapsed": 9.86
+  },
+  {
+    "id": "04_poison_curiosity",
+    "scene": "药痴本色 · 嗅探毒理",
+    "text": "嗯？这个甜腻的气味是……铅华？居然把含有重金属的白粉天天抹在脸上，难怪身子越来越沉。",
+    "file": "/Users/yutao/jiuguan-voice-gateway/assets/audio/maomao_samples/04_poison_curiosity.wav",
+    "duration": 13.2,
+    "elapsed": 14.44
+  },
+  {
+    "id": "05_classic_murmur",
+    "scene": "经典冷淡 · 事不关己",
+    "text": "在花街这种地方，少管闲事才能活得长久。只要老老实实结清药钱，别的我可什么都没看见。",
+    "file": "/Users/yutao/jiuguan-voice-gateway/assets/audio/maomao_samples/05_classic_murmur.wav",
+    "duration": 9.76,
+    "elapsed": 10.28
+  }
+]

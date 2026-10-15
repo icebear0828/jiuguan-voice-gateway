@@ -1,0 +1,132 @@
+{
+  "description": "GPT-SoVITS 自动化验收黄金基准样本集 (Golden Acceptance Cases)",
+  "version": "1.0.0",
+  "acceptance_criteria": {
+    "max_cer": 0.08,
+    "max_consecutive_repeat_words": 2,
+    "acoustic_quality_gate": {
+      "min_rms_db": -45.0,
+      "max_clipping_ratio": 0.001,
+      "min_cps": 0.8,
+      "max_cps": 16.0
+    }
+  },
+  "characters": {
+    "rimuru": {
+      "name": "利姆鲁·特恩佩斯特 (Rimuru Tempest)",
+      "cases": [
+        {
+          "id": "rimuru_01_greeting",
+          "category": "daily",
+          "text": "やあ！調子はどうだ？今日もテンペストは平和で、いい日になりそうだね。",
+          "expected_emotion": "daily",
+          "language": "ja",
+          "max_cer": 0.08
+        },
+        {
+          "id": "rimuru_02_quote",
+          "category": "playful",
+          "text": "俺はスライムのリムル！悪いスライムじゃないよ！……って、前にも言ったっけ？わはは！",
+          "expected_emotion": "playful",
+          "language": "ja",
+          "max_cer": 0.08
+        },
+        {
+          "id": "rimuru_03_combat",
+          "category": "confident",
+          "text": "ジュラの大森林に仇なす者は許さん。覚悟はいいか？後悔させてやる！",
+          "expected_emotion": "confident",
+          "language": "ja",
+          "max_cer": 0.08
+        }
+      ]
+    },
+    "kurisu": {
+      "name": "牧濑红莉栖 (Makise Kurisu)",
+      "cases": [
+        {
+          "id": "kurisu_01_tsundere",
+          "category": "tsundere",
+          "text": "べ、別にアンタのために淹れたコーヒーじゃないんだからね！勘違いしないでよ！",
+          "expected_emotion": "tsundere",
+          "language": "ja",
+          "max_cer": 0.08
+        },
+        {
+          "id": "kurisu_02_science",
+          "category": "science",
+          "text": "理論的に考えて、過去改変には莫大なエネルギーと因果律の補正が伴うはずよ。",
+          "expected_emotion": "science",
+          "language": "ja",
+          "max_cer": 0.08
+        },
+        {
+          "id": "kurisu_03_gentle",
+          "category": "gentle",
+          "text": "大丈夫、私が側にいるわ。だから…もう一人で抱え込まないで。",
+          "expected_emotion": "gentle",
+          "language": "ja",
+          "max_cer": 0.08
+        }
+      ]
+    },
+    "utaha": {
+      "name": "霞之丘诗羽 (Kasumigaoka Utaha)",
+      "cases": [
+        {
+          "id": "utaha_01_intimate",
+          "category": "intimate",
+          "text": "ふふっ、倫理君…そんなに緊張して、私のどこを見つめているのかしら？",
+          "expected_emotion": "intimate",
+          "language": "ja",
+          "max_cer": 0.08
+        },
+        {
+          "id": "utaha_02_annoyed",
+          "category": "annoyed",
+          "text": "締め切り当日になって白紙のプロットを提出するなんて、いい度胸ね、毒虫君。",
+          "expected_emotion": "annoyed",
+          "language": "ja",
+          "max_cer": 0.08
+        },
+        {
+          "id": "utaha_03_shy",
+          "category": "shy",
+          "text": "別に激しくしてもいいのよ…優しくされても、困るだけだから。",
+          "expected_emotion": "shy",
+          "language": "ja",
+          "max_cer": 0.08
+        }
+      ]
+    },
+    "mika": {
+      "name": "圣园未花 (Misono Mika)",
+      "cases": [
+        {
+          "id": "mika_01_greeting",
+          "category": "playful",
+          "text": "先生、おかえり！待ってたよ！ちゃーんといい子でお留守番してたんだから！",
+          "expected_emotion": "playful",
+          "language": "ja",
+          "max_cer": 0.08
+        },
+        {
+          "id": "mika_02_affection",
+          "category": "playful",
+          "text": "先生、私のこと、待っててくれた？わはは～☆ 今日もいっぱい甘やかしてね！",
+          "expected_emotion": "playful",
+          "language": "ja",
+          "max_cer": 0.08
+        },
+        {
+          "id": "mika_03_date_invite",
+          "category": "playful",
+          "text": "ん～！今日も良い天気だね！良かったら、仕事終わりにお散歩とかどうかな？☆",
+          "expected_emotion": "playful",
+          "language": "ja",
+          "max_cer": 0.08
+        }
+      ]
+    }
+  }
+}

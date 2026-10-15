@@ -282,6 +282,8 @@ class VoiceRouter:
                 matched_emotion = "neutral"
             elif character == "kurisu":
                 matched_emotion = "tsundere"
+            elif character == "yutao":
+                matched_emotion = "default"
             else:
                 matched_emotion = "daily"
             source = "default_fallback"
@@ -396,6 +398,9 @@ class VoiceRouter:
             elif character == "chizuru":
                 gpt_path = os.path.join(MODELS_DIR, "chizuru/v4/水原千鹤-v4dpo-20260607-e10.ckpt")
                 sovits_path = os.path.join(MODELS_DIR, "chizuru/v4/水原千鹤-v4dpo-20260607_e16_s464_l32.pth")
+            elif character == "yutao":
+                gpt_path = os.path.join(MODELS_DIR, "yutao/v2pro_master/my_voice_private-e4.ckpt")
+                sovits_path = os.path.join(MODELS_DIR, "yutao/v2pro_master/my_voice_private_e4_s76.pth")
 
         if not (os.path.exists(gpt_path) and os.path.exists(sovits_path)):
             print(f"[VoiceRouter] Missing model weights for {character}: GPT={gpt_path}, SoVITS={sovits_path}")
